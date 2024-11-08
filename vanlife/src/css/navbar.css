@@ -1,0 +1,78 @@
+/* Navbar container */
+.nav-bar {
+    display: flex;                    /* Use flexbox for layout */
+    justify-content: space-between;   /* Space between title and links */
+    align-items: center;              /* Center items vertically */
+    background-color: #710c0a;        /* Orange background */
+    padding: 50px 50px;               /* Add some padding */
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.nav-bar h1 {
+    color: rgb(255, 255, 255);                     /* Title color */
+    font-weight: bold;                /* Make title bold */
+    font-size: 3.5rem;
+    margin: 0; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;             /* Add letter spacing */
+}
+
+/* Unordered list styling */
+.nav-bar ul {
+    display: flex;                    /* Use flexbox for the list */
+    list-style-type: none;            /* Remove bullet points */
+    margin: 0;                        /* Remove default margin */
+    padding: 0;                       /* Remove default padding */
+}
+
+/* List item styling */
+.nav-bar li {
+    display: flex;                    /* Flexbox for links */
+    align-items: center;              /* Center items vertically */
+    gap: 100px;
+}
+
+/* NavLink container for flex */
+.nav-links {
+    display: flex;                    /* Use flexbox for nav links */
+}
+
+/* Link styling */
+.nav-bar a {
+    text-decoration: none;            /* Remove underline from links */
+    color: rgb(255, 255, 255);                     /* Link color */
+    font-size: 2rem;                  /* Font size */
+    
+    font-weight: normal;                 /* Reduced font-weight (lighter text) */
+    position: relative;               /* Needed for sliding underline effect */
+}
+
+/* Hover effect - underline */
+.nav-bar a:hover {
+    text-decoration: underline;       /* Underline on hover for better UX */
+}
+
+/* Sliding underline effect for links */
+.nav-bar a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(248, 248, 248);
+    transform: scaleX(0);            /* Initially hidden */
+    transform-origin: left;         /* Origin for scaling */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* When link is active, apply sliding effect */
+.nav-bar a.active::after {
+    transform: scaleX(1);            /* Display underline when active */
+}
+
+/* Active state styling */
+.nav-bar a.active {
+    color: #ffffff;                  /* Optional: Color change when active */
+}

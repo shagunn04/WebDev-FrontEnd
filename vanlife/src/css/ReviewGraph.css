@@ -1,0 +1,48 @@
+.ReviewGraph {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  .ReviewGraph h2 {
+   
+   font-size: 2.3rem;
+   font-weight: 400;
+   
+  }
+  
+  
+  .BarChart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 600px;
+    padding: 20px 0;
+  }
+  
+  .BarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Bar {
+    width: 80px;
+    margin-bottom: 5px;
+  }
+  
+  .BarLabel {
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #333;
+  }
+  
+  .CountLabel {
+    font-family: 'Georgia', serif; /* Different font for count */
+    font-size: 1.9rem;
+    color: #444;
+    margin-top: 2px;
+  }
+  

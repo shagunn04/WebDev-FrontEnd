@@ -1,0 +1,139 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box;
+    background-color: #f5ede5;
+    height: 100%; /* Ensure the body takes up full height */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+}
+
+/* Ensure all elements respect the border-box model */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Main content container */
+.About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    flex: 1; /* This allows the About section to take up remaining space */
+}
+
+/* Reduced height for the full-width image */
+.About img {
+    width: 100%;
+    max-height: 800px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.About h1 {
+    font-size: 4.0rem;
+    color: #2b2b2b;
+    margin-left: 50px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+/* Styling the paragraph section with left alignment */
+.About-para {
+    margin-left: 50px;
+}
+
+.About-para p {
+    font-size: 2.2rem;
+    line-height: 1.6;
+    margin: 0 0 15px;
+    color: #555;
+    padding: 0 10px;
+    letter-spacing: 5px;
+}
+
+.About-Explore {
+    background-color: #f0cc8b;
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 800px;
+    margin-top: 100px;
+}
+
+.About-Explore h1 {
+    font-size: 2.5rem;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-right: 90px;
+}
+
+.explore-button {
+    padding: 20px 60px;
+    font-size: 2.1rem;
+    color: white;
+    background-color: #000000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #ab7c60;
+}
+
+/* Footer Styling */
+.Footer {
+    background-color: rgb(5, 5, 5); /* Slate grey background color */
+    color: white; /* White text color */
+    text-align: center; /* Center-align the text */
+    padding: 20px; /* Adds some space around the content */
+    font-size: 1.5rem; /* Slightly larger font size for better readability */
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Optional: Add subtle shadow to the text for a nice effect */
+.footer-text {
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox to align icon and text */
+    align-items: center; /* Center the icon and text vertically */
+    font-weight: 100; /* Lighter font weight */
+    letter-spacing: 2px;
+}
+
+/* Styling the copyright icon */
+.copyright-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+/* Ensuring the footer stays at the bottom of the page */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+}

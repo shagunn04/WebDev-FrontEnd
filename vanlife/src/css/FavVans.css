@@ -1,0 +1,98 @@
+.FavVans {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    padding: 30px; /* Increased padding for the container */
+    
+}
+
+.FavVans h1 {
+    margin-left: 20px;
+    font-size: 4rem; /* Larger font size for h1 */
+    color: #904141;
+    margin-bottom: 40px; /* More space below the title */
+    text-align: left; /* Align h1 to the left */
+    width: 100%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 200;
+}
+
+.FavVans-List {
+    display: flex; /* Use flex layout for cards */
+    flex-direction: column;
+    gap: 40px; /* Space between cards */
+    width: 100%;
+   
+}
+
+/* Styling the FavVansBar to make the card even larger */
+.FavVansBar {
+   
+    display: flex;
+    flex-direction: row; /* Align children horizontally */
+    align-items: center; /* Vertically center the content */
+    background-color: #f9f9f9;
+    padding: 50px; /* Increased padding inside the card */
+    border-radius: 16px; /* Larger rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow for a more elevated look */
+    gap: 80px; /* More space between image and text */
+    width: 1000px; /* Increased card width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+/* Styling the image inside the FavVansBar */
+.FavVan-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 500px; /* Even larger image width */
+    height: 400px; /* Even larger image height */
+    border-radius: 16px; /* Larger rounded corners for the image */
+    overflow: hidden; /* Ensure image doesn't overflow */
+}
+
+.FavVan-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes the image cover the container */
+}
+
+/* Styling the text container inside FavVansBar */
+.FavVan-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the text */
+   
+}
+
+.FavVan-text h1 {
+    font-size: 2.8rem; /* Even larger text size for the title */
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+   
+}
+.FavVan-text button{
+    padding: 20px 30px;
+    background-color: green;
+    font-size: 1.7rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.FavVan-text button:hover{
+   
+    background-color: rgb(6, 168, 6);
+   
+}
+
+.FavVan-text h1:last-of-type {
+    font-size: 2.2rem; /* Larger price text */
+    color: #629e22;
+  
+}
+.FavVansBar:hover {
+    transform: translateY(-10px); /* Slightly lift the card */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Darker and larger shadow on hover */
+}
+

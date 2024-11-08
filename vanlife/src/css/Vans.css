@@ -1,0 +1,57 @@
+/* Vans.css */
+.Vans {
+    background-image: url('./Vansbg.avif'); /* Make sure the path is correct */
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    color: white; /* Change text color to white for contrast */
+    text-align: center; /* Center text */
+}
+
+.Vans-Opening {
+    /* Styles for the opening div, if needed */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.Vans-Opening h1 {
+    font-size: 6rem;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow for h1 */
+}
+
+.Vans-Opening h1:hover {
+    color: rgba(255, 165, 0, 1); /* Change color on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.Vans-Opening p {
+    font-size: 3rem;
+    transition: color 0.3s ease, opacity 0.3s ease; /* Smooth transition for color and opacity */
+    text-shadow: 9px 1px 5px rgba(0, 0, 0, 0.5); /* Shadow for p */
+}
+
+.Vans-Opening p:hover {
+    color: rgba(255, 165, 0, 1); /* Change color on hover */
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+button {
+    margin-top: 20px; /* Space above the button */
+    padding: 40px 40px; /* Button padding */
+    font-size: 40px; /* Button font size */
+    cursor: pointer; /* Change cursor on hover */
+    background-color: rgba(255, 165, 0, 0.8); /* Orange color */
+    border: none; /* Remove default border */
+    border-radius: 60px; /* Rounded corners */
+    color: white; /* Text color for the button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+}
+
+button:hover {
+    background-color: rgba(255, 140, 0, 1); /* Darker orange color on hover */
+    transform: scale(1.05); /* Slightly scale the button */
+}

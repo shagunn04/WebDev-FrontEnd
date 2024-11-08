@@ -1,0 +1,76 @@
+/* IncomeCard.css */
+.IncomeCard {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Ensure items are spaced out */
+    align-items: center; /* Align items vertically in the center */
+    padding: 20px;
+    width: 100%;
+    margin: 10px 0;
+    transition: transform 0.2s ease;
+}
+
+.IncomeCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.Income-img {
+    margin-right: 20px;
+    width: 350px; /* Adjust width of image */
+    height: 200px; /* Adjust height of image */
+}
+
+.Income-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* To ensure image covers the area without distortion */
+}
+
+.Income-text {
+    flex-grow: 1; /* Allow text area to take up the remaining space */
+    
+    
+}
+
+.Income-text h1 {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Income-text h1:nth-child(2) {
+    font-size: 2.2rem;
+    color: #777;
+}
+
+.Write-Review{
+    font-size: 2rem;
+    text-decoration: none;
+    color:rgb(59, 6, 109);
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.Income-expense {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: right; /* Align the expense to the right side */
+    flex-shrink: 0; /* Prevent this from shrinking */
+    margin-left: 20px;
+}
+
+
+.Income-expense-day h3 {
+    font-size: 1.9rem;
+    margin-top: 32px;
+    margin-left: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(99, 64, 64); /* Ensure text color for rented days is as desired */
+}

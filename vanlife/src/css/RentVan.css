@@ -1,0 +1,93 @@
+/* Center the form on the page */
+.RentVan-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 10% auto; /* Center vertically and horizontally */
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px) brightness(1.2);
+    background-color: rgba(255, 255, 255, 0.1); /* Frosted glass effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    color: #fff; /* For better contrast on the frosted background */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    height: 500px;
+}
+
+/* Success message at the top of the card */
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem; /* Adds space between the success message and the form */
+    width: 100%;
+    text-align: center;
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Style for the heading */
+.RentVan-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0a702f;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Input styling */
+.RentVan-page input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    border: 1px solid rgb(20, 17, 17);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #7f4343;
+    outline: none;
+    font-size: 2.5rem;
+}
+
+/* Button styling */
+.RentVan-page button {
+    padding: 3.8rem 3.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff7f50;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.RentVan-page button:hover {
+    background-color: #ff6347;
+}
+
+.RentVan-page button:disabled {
+    background-color: #d3d3d3; /* Grey out the button when disabled */
+    cursor: not-allowed;
+}
+
+/* Optional media query for smaller screens */
+@media (max-width: 480px) {
+    .RentVan-page {
+        padding: 1.5rem;
+    }
+
+    .RentVan-page h1 {
+        font-size: 1.8rem;
+    }
+}

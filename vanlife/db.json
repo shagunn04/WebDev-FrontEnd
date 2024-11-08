@@ -1,0 +1,153 @@
+{
+  "vans": [
+    {
+      "id": 1,
+      "title": "Voyage Camper",
+      "image": "https://vanlifetrader.com/wp-content/uploads/2024/01/DSC04233-Enhanced-NR-new-590x394.jpg",
+      "type": "Camper Van",
+      "price": 200,
+      "description": "The Voyage Camper is the ultimate choice for those looking to embark on unforgettable journeys. With a spacious interior designed for comfort, this camper features a fully equipped kitchenette, cozy sleeping quarters, and ample storage for all your travel essentials. Its rugged design ensures that you can take it off the beaten path while still enjoying the comforts of home. Whether you're planning a weekend getaway or a cross-country adventure, the Voyage Camper is your reliable companion."
+    },
+    {
+      "id": 2,
+      "title": "Luxury Suite",
+      "image": "https://content.jdmagicbox.com/rep/b2b/campervan/campervan-1.jpg?impolicy=queryparam&im=Resize=(360,360),aspect=fit",
+      "type": "Luxury Van",
+      "price": 250,
+      "description": "Experience the height of luxury with our Luxury Suite van. Designed for discerning travelers, this van boasts elegant interiors with high-end finishes, plush seating, and all the modern conveniences you could desire. Equipped with state-of-the-art technology, including a premium sound system and advanced climate control, you'll feel right at home as you explore. Perfect for those who appreciate the finer things in life, the Luxury Suite ensures every road trip is as comfortable as it is stylish."
+    },
+    {
+      "id": 3,
+      "title": "Skittle",
+      "image": "https://www.bodans.co.uk/wp-content/uploads/2023/08/VW-T6.1-Camper-For-Sale-1-768x512.jpg",
+      "type": "Minivan",
+      "price": 100,
+      "description": "The Skittle minivan is your ideal partner for city adventures and family outings. Compact yet spacious, this van offers flexibility with configurable seating and storage options that make it perfect for everything from daily errands to weekend getaways. With its easy maneuverability, you can navigate tight city streets and parking spots with ease, all while ensuring that your passengers travel in comfort. The Skittle combines functionality and style to meet the demands of modern life."
+    },
+    {
+      "id": 4,
+      "title": "Bloodshed Road",
+      "image": "https://www.thewaywardhome.com/wp-content/uploads/2020/04/overland-sprinter-van.jpg",
+      "type": "Off-Road Van",
+      "price": 200,
+      "description": "Built for adventure seekers, the Bloodshed Road off-road van is designed to tackle the toughest terrains with ease. Featuring enhanced suspension and all-terrain tires, this van provides stability and comfort even on the most rugged paths. Its spacious interior is equipped with everything you need for extended off-grid living, including a fully stocked kitchenette and comfortable sleeping arrangements. Ideal for camping trips, overlanding, or simply exploring the great outdoors, this van is your ticket to freedom."
+    },
+    {
+      "id": 5,
+      "title": "Big-Show",
+      "image": "https://imgcdn.zigwheels.ph/medium/gallery/exterior/8/1836/foton-toano-front-angle-low-view-299596.jpg",
+      "type": "Family Van",
+      "price": 180,
+      "description": "The Big-Show family van is designed to accommodate larger groups without compromising on comfort. With spacious seating for up to eight passengers, everyone can travel together while enjoying the ride. The interior features soft upholstery, advanced entertainment systems, and plenty of storage for luggage and gear. Whether it's a family vacation or a day trip to the beach, the Big-Show ensures that you have all the space you need to create lasting memories."
+    },
+    {
+      "id": 6,
+      "title": "Urban-Compact",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/68_Dodge_Sporstman_Van_%286255320295%29.jpg",
+      "type": "Compact Van",
+      "price": 120,
+      "description": "The Urban-Compact van is perfect for city dwellers who need a reliable vehicle that can fit into tight spaces. Its small footprint doesn't sacrifice interior space, making it ideal for navigating crowded streets and parking lots. Inside, you'll find a cleverly designed layout that maximizes storage and passenger comfort. The Urban-Compact is the go-to choice for those seeking efficiency and versatility in their everyday transportation."
+    },
+    {
+      "id": 7,
+      "title": "Freedom Traveller",
+      "image": "https://www.autotrader.com/wp-content/uploads/2022/03/1989-dodge-b250.jpg",
+      "type": "Conversion Van",
+      "price": 220,
+      "description": "Travel freely with the Freedom Traveller conversion van, designed for those who love the open road. This versatile van features a custom interior with comfortable seating that converts into a sleeping area, making it ideal for spontaneous adventures. Equipped with a kitchenette and modern amenities, the Freedom Traveller ensures that you can enjoy all the comforts of home while on the move. Perfect for weekend getaways or extended trips, this van is ready for your next adventure."
+    },
+    {
+      "id": 8,
+      "title": "Classic Retro Ride",
+      "image": "https://img.freepik.com/premium-photo/vintage-retro-van-road-transport-vehicle-passengers-cargo_1061358-55085.jpg",
+      "type": "Retro Van",
+      "price": 160,
+      "description": "The Classic Retro Ride van combines vintage style with modern functionality, making it a standout choice for those who appreciate nostalgia. Its charming exterior is complemented by a well-appointed interior featuring retro aesthetics and contemporary comforts. Perfect for festivals, road trips, or as a unique event vehicle, this van brings a sense of fun and adventure to any journey. Experience the joy of travel with a touch of classic flair."
+    },
+    {
+      "id": 9,
+      "title": "Adventure Camper",
+      "image": "https://contravans.com/wp-content/uploads/2023/07/mer1.jpeg",
+      "type": "Camper Van",
+      "price": 200,
+      "description": "The Adventure Camper is designed for those who seek the thrill of the great outdoors without sacrificing comfort. Its durable construction allows it to handle any terrain, while the spacious interior is fitted with all the essentials for camping and traveling. With a fully equipped kitchen and cozy sleeping arrangements, you can enjoy the freedom of the road while having all your needs met. This camper is your ideal companion for making unforgettable memories."
+    },
+    {
+      "id": 10,
+      "title": "Luxury Cruiser",
+      "image": "https://cdn.vox-cdn.com/thumbor/RIBWyNdFvgJU9D6DlhsKcHSc4kw=/0x0:5760x3840/1200x800/filters:focal(2420x1460:3340x2380)/cdn.vox-cdn.com/uploads/chorus_image/image/59293591/OSV18_01_PowerStation_Hero.0.jpg",
+      "type": "Luxury Van",
+      "price": 250,
+      "description": "With the Luxury Cruiser, every journey becomes an experience in opulence. This van features an elegantly designed interior complete with leather seating, mood lighting, and high-end entertainment systems. Whether you're headed to a business meeting or a weekend retreat, the Luxury Cruiser ensures that you travel in style and comfort. The spacious layout offers room for relaxation and entertainment, making it perfect for both work and leisure."
+    },
+    {
+      "id": 11,
+      "title": "Compact Explorer",
+      "image": "https://d91ztqmtx7u1k.cloudfront.net/ClientContent/Images/Catalogue/20230522055417-38540d3d-281c-4761-90ed-5b1b9b6d481f.jpg",
+      "type": "Minivan",
+      "price": 100,
+      "description": "The Compact Explorer minivan is your gateway to adventure, offering a smart design that maximizes space without compromising on comfort. It’s equipped with versatile seating configurations that make it ideal for families or groups of friends. The efficient fuel economy and easy handling make it a practical choice for both city driving and long road trips. With its reliable performance and spacious interior, the Compact Explorer is ready for all your journeys."
+    },
+    {
+      "id": 12,
+      "title": "Off-Road Adventurer",
+      "image": "https://gnomadhome.com/wp-content/uploads/2022/12/4x4-van-parked-on-the-road-1024x861.jpg",
+      "type": "Off-Road Van",
+      "price": 200,
+      "description": "For those who crave off-the-beaten-path adventures, the Off-Road Adventurer van is the perfect vehicle. Built with a rugged exterior and off-road capabilities, it can tackle any challenge nature throws your way. Inside, you'll find a comfortable living space complete with a kitchenette, storage for gear, and cozy sleeping arrangements. Whether you're camping under the stars or exploring remote locations, this van is equipped to handle your wildest escapades."
+    },
+    
+
+    {
+      "id": 13,
+      "title": "Family Voyager",
+      "image": "https://images.squarespace-cdn.com/content/v1/61e0a6b87cb57d62152fead2/1703052559370-6QS6OZWWG2D9EDEGPPSR/DSC01952.jpeg?format=750w",
+      "type": "Family Van",
+      "price": 180,
+      "description": "The Family Voyager van is designed with families in mind, offering a spacious interior that accommodates up to seven passengers. Its flexible seating arrangement allows for easy reconfiguration to maximize storage space for all your travel essentials. Safety features include advanced airbag systems and stability control, ensuring peace of mind on every journey. Whether it's a road trip to the mountains or a weekend getaway to the beach, the Family Voyager provides comfort and convenience for everyone on board."
+    },
+    {
+      "id": 14,
+      "title": "City Compact",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/1997-1999_Toyota_TownAce_%28KR42R%29_van_01.jpg/420px-1997-1999_Toyota_TownAce_%28KR42R%29_van_01.jpg",
+      "type": "Compact Van",
+      "price": 120,
+      "description": "The City Compact van is perfect for urban living, providing the ideal balance of size and functionality. Its compact dimensions make it easy to navigate through city streets and fit into tight parking spots. Despite its small footprint, the interior is cleverly designed to maximize space, offering comfortable seating and practical storage solutions. Ideal for city commuters or small families, the City Compact is an efficient and reliable choice for daily use."
+    },
+    {
+      "id": 15,
+      "title": "Ultimate Conversion",
+      "image": "https://di-uploads-pod4.dealerinspire.com/germainautogroupportal/uploads/2024/03/2403-Mercedes-Benz-Metris-Passenger-Van.webp",
+      "type": "Conversion Van",
+      "price": 220,
+      "description": "Experience ultimate versatility with the Ultimate Conversion van. Designed to meet the needs of travelers and adventurers alike, this van features a fully customized interior that can be tailored to your preferences. It includes flexible seating configurations, a kitchen area, and plenty of storage for all your gear. Whether you're heading out for a weekend camping trip or need a comfortable space for road travel, the Ultimate Conversion van adapts to fit your lifestyle seamlessly."
+    },
+    {
+      "id": 16,
+      "title": "Retro Revival",
+      "image": "https://c.pxhere.com/photos/e3/9e/volkswagen_vwbus_camper_hippie_retro_automobiles_car_vehicle-711574.jpg!d",
+      "type": "Retro Van",
+      "price": 160,
+      "description": "Embrace the spirit of adventure with the Retro Revival van, a classic that combines nostalgic design with modern amenities. This eye-catching van is perfect for festivals, road trips, or simply making a statement on the road. Inside, you'll find a cozy living space with vintage decor, comfortable seating, and the essentials for cooking and dining on the go. With the Retro Revival, every trip becomes a journey back in time while enjoying the comforts of contemporary travel."
+    },
+    {
+      "id": 17,
+      "title": "Eco Mini",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Hijet-cargo.jpg",
+      "type": "Minivan",
+      "price": 110,
+      "description": "The Eco Mini van is your go-to choice for eco-conscious driving. Designed with fuel efficiency in mind, this compact minivan offers a surprisingly spacious interior while keeping your environmental footprint low. Perfect for city commutes and short trips, the Eco Mini features low emissions and a small engine, making it a cost-effective option for those who want to save on fuel without sacrificing utility. Enjoy the benefits of a reliable vehicle while being kind to the planet."
+    },
+    {
+      "id": 18,
+      "title": "Adventure Seeker",
+      "image": "https://www.motortrend.com/uploads/sites/11/2019/10/Sportsmobile-Classic-4x4-01.jpg?w=768&width=768&q=75&format=webp",
+      "type": "Off-Road Van",
+      "price": 240,
+      "description": "The Adventure Seeker van is built for those who crave the thrill of exploration and the great outdoors. Featuring robust off-road capabilities, this van is equipped with 4x4 drive, enhanced suspension, and all-terrain tires, making it ideal for tackling rugged trails and unpaved roads. Inside, the van offers a comfortable living space with amenities for cooking, sleeping, and relaxing after a day of adventure. The Adventure Seeker is perfect for camping trips, road trips, or any journey where adventure awaits."
+    }
+      ]
+      
+    
+  }
+  

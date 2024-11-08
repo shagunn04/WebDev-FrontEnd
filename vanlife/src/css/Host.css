@@ -1,0 +1,56 @@
+.Host-Navbar {
+    margin-top:20px;
+    width: 100%;
+    box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px 0;
+    
+}
+
+.Host-Navbar__nav {
+    display: flex;
+    gap: 100px;
+    justify-content: center; 
+    margin-bottom: 20px;
+}
+
+.Host-Navbar__link {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.6em;
+    padding: 5px;
+    transition: color 0.3s ease;
+    font-weight: normal; /* Remove bold */
+}
+
+/* Change color on hover */
+.Host-Navbar__link:hover {
+    color: #0077ff;
+    transform: scale(1.1);
+}
+
+/* Sliding underline effect on active link */
+.Host-Navbar__link.active {
+    color: #000000; /* Change active link color */
+}
+
+/* Create sliding underline using ::after */
+.Host-Navbar__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Position underline slightly below the text */
+    width: 100%;
+    height: 2px;
+    background-color: #055be6;
+    transform-origin: left;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: scaleX(0); /* Start with hidden underline */
+    opacity: 0; /* Start with invisible underline */
+}
+
+/* Active link underline, with sliding effect */
+.Host-Navbar__link.active::after {
+    transform: scaleX(1); /* Show underline */
+    opacity: 1; /* Make underline visible */
+}

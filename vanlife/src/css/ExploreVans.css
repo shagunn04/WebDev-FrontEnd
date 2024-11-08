@@ -1,0 +1,58 @@
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    gap: 20px;                             /* Space between each card */
+    padding: 10px;
+  }
+  
+  .Card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s ease-in-out;
+  }
+  
+  .Card:hover {
+    transform: scale(1.5); /* Slightly enlarges the card on hover */
+  }
+  
+  .Filter-Buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap to the next row if necessary */
+    gap: 12px; /* Space between buttons */
+    justify-content: center; /* Center the buttons */
+    margin-bottom: 16px; /* Margin below the filter buttons */
+}
+
+.Filter-Buttons button {
+    padding: 30px 30px; /* Adjust padding for buttons */
+    font-size:1.5em; /* Font size for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #df96ac; /* Background color */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hover effect for filter buttons */
+.Filter-Buttons button:hover {
+    background-color: #691565; /* Darker background on hover */
+}
+
+/* Specific styles for the "Clear all Filters" button */
+.Filter-Buttons .Clear button {
+    padding: 30px 20px; /* Larger padding for the clear button */
+    font-size: 1.5em; /* Slightly larger font size for the clear button */
+    background-color: #ffcccc; /* Distinct background color */
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Hover effect for the clear button */
+.Filter-Buttons .Clear button:hover {
+    background-color: #0808cc; /* Darker
+    color shade on hover */
+    color:white;
+}

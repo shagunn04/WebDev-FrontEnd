@@ -1,0 +1,66 @@
+.Card {
+  text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures spacing between sections */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    max-width: 100%;
+    background-color: #e6d1d1;
+  }
+  
+  .Card:hover {
+    transform: scale(1..0);
+  }
+  
+  .Card-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .Card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .Card-title {
+    font-size: 1.4em;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(5, 79, 140);
+    
+
+  }
+  
+  .Card-price {
+    font-size: 1.4em;
+    color: #2da309;
+    margin: 0;
+    margin-left: 43px;
+
+  }
+  
+  .Card-type {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: none;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .Card-type h3 {
+    margin: 0;
+    font-size: 0.7em;
+    color: #2c1a1a;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+  }
+  

@@ -1,0 +1,123 @@
+/* Ensure the VanCard takes full width */
+.VanCard {
+    width: 100vw;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Back link styling */
+.back-link {
+    text-align: left;
+    padding-left: 20px;
+    color: #1f2326;
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 25px;
+}
+
+/* Container for the image and details */
+.Van-Card-Content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Remove any extra spacing */
+}
+
+/* Full-width image */
+.Van-Image {
+    width: 50vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0; /* Ensure image edges align with viewport */
+    margin: 0;
+}
+
+/* Full-width details container */
+.Van-Details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Button for van type */
+.Van-Type {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+/* Title and price styling */
+.Van-Title {
+    font-size: 2.9rem;
+    font-weight: bold;
+    margin: 10px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Van-Price {
+    font-size: 40px;
+    color: #2ecc71;
+    margin-bottom: 15px;
+}
+
+.Van-Description {
+    font-size: 30px;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Full-width, centered rent button at bottom */
+.Rent-Button {
+    width: 90%;
+    max-width: 400px;
+    padding: 25px;
+    background-color: #3498db;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 20px auto; /* Centered horizontally */
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Rent-Button:hover {
+    background-color: #2980b9;
+}
+
+
+.FavButton {
+    padding: 20px 50px; /* Reduce padding for a smaller button */
+    font-size: 1rem; /* Smaller font size */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    margin-left:2120px;
+    font-size: 25px;
+}
+
+.FavButton.add {
+    background-color: green; /* Green when adding to favorites */
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+}
+
+.FavButton.remove {
+    background-color: red; /* Red when removing from favorites */
+    color: white;
+    transition: background-color 0.3s ease;
+}
