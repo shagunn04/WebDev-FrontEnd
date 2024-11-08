@@ -1,0 +1,148 @@
+/* Reset margins and paddings */
+html, body {
+    margin: 0;      
+    padding: 0;  
+    height: 100%;  
+    box-sizing: border-box; 
+    background:rgb(158, 115, 115); 
+}
+
+* {
+    box-sizing: inherit;  
+}
+
+.Header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: linear-gradient(to right, rgb(178, 141, 178), rgb(255, 105, 180)); 
+    width: 100%;    
+    position: relative;  
+    top: 0;          
+    left: 0;         
+    padding: 1px;    
+    margin: 0;   
+    height: 250px;        
+}
+
+.Icon {
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+.Title {
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    letter-spacing: 2px;
+}
+
+.Meme {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    margin-top: 400px;
+    height: 40vh; /* Full viewport height to center vertically */
+}
+
+.input-text input {
+    width: 500px;           /* Set width for input fields */
+    height: 100px;           /* Set height for input fields */
+    font-size: 50px;       /* Increase font size for better readability */
+    padding: 10px;         /* Add padding for more space inside the input */
+    margin: 10px 0;        /* Margin for spacing between inputs */
+    border: 2px solid #947c7c;     /* Example border style */
+    border-radius: 15px;  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#upper-text {
+   margin-right: 100px;
+}
+
+.input-text input::placeholder {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.5); 
+}
+
+.Button {
+    margin-top: 40px;      /* Space between inputs and button */
+    margin-right:300px;
+}
+
+.Button button {
+    padding: 20px 40px;    /* Increase padding for button size */
+    font-size: 45px;       /* Increase font size for button text */
+    cursor: pointer;        /* Change cursor to pointer on hover */
+    background: linear-gradient(to right, rgb(178, 141, 178), rgb(255, 105, 180)); /* Gradient background */
+    color: white;          /* Set text color */
+    border: none;          /* Remove default border */
+    border-radius: 10px;   /* Optional: Round button corners */
+    margin-left: 300px;
+    transition: background 0.5s ease; /* Add transition for the background */
+}
+
+.Button button:hover {
+    background: linear-gradient(to right, rgb(178, 141, 178), rgb(0, 105, 180)); /* Gradient for hover state */
+}
+
+.Meme-Image {
+    margin-top:150px;
+    margin-left: 75px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    width: 920px; 
+    min-height: 300px; /* Ensure a minimum height to avoid layout shifts */
+    display: flex; /* Align content inside */
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center the image */
+}
+
+.Meme-Image img {
+    width: 100%; /* Allow the image to fit within the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Optional: Restrict maximum height */
+}
+
+
+.Upper{
+    font-size: 150px;
+    font-family: fantasy;
+}
+.Lower{
+    margin-top:100px;
+    font-size: 150px;
+    font-family: fantasy;
+}
+
+
+.Footer > * {
+    margin:0;
+    padding: 0; 
+}
+.Footer {
+    margin-top: 400px; /* Set a smaller margin to move it down */
+    padding: 20px; /* Internal padding for spacing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px; /* Space between items */
+    background: linear-gradient(to right, rgb(178, 141, 178), rgb(255, 105, 180));
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 150px;
+}
+
+
+.Footer h3,h5
+{
+   color:white;
+   font-family:monospace;
+   font-size: 30px;
+   letter-spacing: 5px;
+}
+
