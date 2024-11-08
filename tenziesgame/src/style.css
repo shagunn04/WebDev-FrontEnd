@@ -1,0 +1,133 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 19px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  /* Instruction Component Styles */
+
+.Instruction {
+    background-color: #ffffff; 
+    
+    text-align: center; /* Center the text */
+    margin: 20px; /* Margin for spacing around the component */
+    max-width: 400px; /* Maximum width to maintain a nice layout */
+}
+
+.Instruction h1 {
+    font-size: 34px; /* Size of the title */
+    color: #333; /* Dark gray color for the title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.Instruction p {
+    font-size: 16px; /* Size of the paragraph text */
+    color: #666; /* Lighter gray for the paragraph text */
+    line-height: 1.5; /* Line height for better readability */
+}
+ 
+/* style.css */
+
+/* Style for the dice container */
+.dice-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap into the next row */
+    justify-content: center; /* Center the items horizontally */
+    margin: 20px; /* Adds some margin around the container */
+}
+
+.dice-unfrozen {
+    width: 60px; /* Width of the dice */
+    height: 60px; /* Height of the dice */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex; /* Enables flexbox for centering */
+    align-items: center; /* Centers the content vertically */
+    justify-content: center; /* Centers the content horizontally */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Light border */
+    border-radius: 5px; /* Slightly rounded corners */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Soft shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    margin: 10px; /* Space between dice */
+    cursor: pointer; /* Pointer cursor for hover effect */
+}
+
+.dice-unfrozen:hover {
+    background-color: rgba(173, 216, 230, 0.6); /* Light blue color on hover */
+    box-shadow: 0 4px 15px rgba(0, 191, 255, 0.6); /* Bright shadow effect on hover */
+    animation: shiver 1s; 
+}
+@keyframes shiver {
+    0% { transform: translate(0); }
+    25% { transform: translate(-2px, 2px); }
+    50% { transform: translate(2px, -2px); }
+    75% { transform: translate(-2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+.dice-frozen {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Light icy border */
+    border-radius: 5px; /* Rounded corners for icy effect */
+    background: linear-gradient(145deg, rgba(240, 248, 255, 0.9), rgba(173, 216, 230, 0.8)); /* Frosty gradient background */
+    box-shadow: 0 4px 15px rgba(0, 191, 255, 0.5); /* Icy shadow */
+    animation: iceEffect 0.5s infinite alternate; /* Icy animation */
+    margin: 10px; /* Space between dice */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes iceEffect {
+    0% {
+        transform: scale(1);
+        opacity: 0.9; /* Slightly less opaque at the start */
+    }
+    100% {
+        transform: scale(1.05); /* Slight scaling effect */
+        opacity: 1; /* Fully opaque at the peak */
+    }
+}
+.Roll-Button {
+    display: flex;
+    justify-content: center; /* Center the button */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+.Roll-Button button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.Roll-Button button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
