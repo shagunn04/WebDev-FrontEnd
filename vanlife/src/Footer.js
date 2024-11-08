@@ -12,10 +12,10 @@ function Footer() {
                 2024 #VANLIFE Copyrights reserved
             </h3>
             
-            {/* Add hover effect to this text */}
+       
             <h2 className="developer-name">Developed by Sarim Malik</h2>
             
-            {/* GitHub link with hover effect */}
+         
             <a 
                 href="https://github.com/SarimMalik01/WebDevelopment-Projects/tree/main/vanlife"
                 target="_blank" 
