@@ -136,4 +136,36 @@ html, body {
 
 .Footer {
     margin-top: auto; /* Pushes the footer to the bottom */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.developer-name {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.developer-name:hover {
+    transform: scale(1.1);
+    color: #007acc; /* Choose any color you like */
+}
+
+
+.github-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.github-link:hover {
+    transform: scale(1.1);
+    color: #ff5733; /* Choose any color you like */
+}
+.github-icon {
+    font-size: 24px;
 }
