@@ -1,0 +1,267 @@
+/* Styling the Header Component */
+/* Toggle Button Styles */
+
+
+/* App.css */
+/* Toggle Container */
+.toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Toggle Styles */
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px; /* Width of the toggle switch */
+    height: 34px; /* Height of the toggle switch */
+}
+
+.toggle input {
+    opacity: 0; /* Hide the checkbox */
+    width: 0; /* Hide the checkbox */
+    height: 0; /* Hide the checkbox */
+}
+
+/* Slider Styles */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc; /* Background color when off */
+    transition: .4s; /* Transition for smoothness */
+    border-radius: 34px; /* Rounded corners */
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px; /* Height of the slider knob */
+    width: 26px; /* Width of the slider knob */
+    left: 4px; /* Position of the knob */
+    bottom: 4px; /* Position of the knob */
+    background-color: white; /* Background color of the knob */
+    border-radius: 50%; /* Rounded knob */
+    transition: .4s; /* Transition for smoothness */
+}
+
+/* Change background color when checked */
+input:checked + .slider {
+    background-color: #61dafb; /* Background color when on */
+}
+
+/* Move the knob when checked */
+input:checked + .slider:before {
+    transform: translateX(26px); /* Move knob to the right */
+}
+
+/* Body Styles */
+body .dark-mode {
+    background-color: #282c34; /* Dark background */
+    color: white; /* Default text color for dark mode */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transitions */
+}
+
+body .light-mode {
+    background-color: #ffffff; /* Light background */
+    color: #282c34; /* Default text color for light mode */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transitions */
+}
+
+
+
+
+
+
+
+
+
+.toggle-button {
+    padding: 10px 15px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    margin: 10px; /* Margin around the button */
+}
+
+/* Dark Mode Toggle Button Styles */
+.dark-mode .toggle-button {
+    background-color: #61dafb; /* Light blue background */
+    color: #282c34; /* Dark text */
+}
+
+/* Light Mode Toggle Button Styles */
+.light-mode .toggle-button {
+    background-color: #282c34; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+/* Toggle Button Hover Effect */
+.toggle-button:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+}
+
+.nav-bar-dark, .nav-bar-light {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.nav-bar-dark {
+    background-color: #282c34; /* Dark background */
+    color: #ffffff; /* Light text for dark mode */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.nav-bar-light {
+    background-color: #ffffff; /* Light background */
+    color: #333333; /* Dark text for light mode */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Title */
+.nav-bar-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #61dafb; /* Static color for title */
+    font-size: 2.5rem;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+/* Logo & Cover Styling */
+.nav-bar-cover {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Navigation Links Styling */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Space between each link */
+    margin: 0;
+}
+
+.nav-links li {
+    list-style-type: none;
+}
+
+.nav-links a {
+    color: inherit; /* Inherits color from parent for dark and light modes */
+    text-decoration: none; /* Removes underline */
+    font-size: rem;
+    transition: color 0.3s ease;
+}
+
+.nav-bar-dark .nav-links a {
+    color: #61dafb; /* Light link color for dark mode */
+}
+
+.nav-bar-light .nav-links a {
+    color: #333333; /* Dark link color for light mode */
+}
+
+.nav-links a:hover {
+    color: #61dafb; /* Hover color effect */
+    text-decoration: underline;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.react-logo {
+    width: 90px;  /* Adjust size if necessary */
+    height: auto;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;  /* Removes bullet points */
+    display: flex;
+    gap: 20px; /* Space between links */
+    margin: 0;
+}
+
+.nav-links li {
+    list-style-type: none;  /* Removes bullet points for individual items */
+    font-size: 20px;
+}
+
+.nav-links a {
+    color: #61dafb;  /* React logo color */
+    text-decoration: none;  /* Removes underline */
+    font-size: 1.7rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;  /* Adds underline on hover */
+}
+
+/* Unorder.css */
+
+/* Dark Mode Styles */
+/* Unorder.css */
+
+/* Dark Mode Styles */
+.list-container-dark {
+   
+    padding: 20px; /* Padding for the container */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Margin around the container */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transitions */
+}
+
+/* Light Mode Styles */
+.list-container-light {
+    
+    padding: 20px; /* Padding for the container */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Margin around the container */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transitions */
+}
+
+/* Additional styles for list items */
+.list-container-dark h1 {
+    padding-left: 20px; /* Indentation for the list */
+    color: #f6f9fe;
+    transition: color 0.5s ease; /* Smooth transition for color */
+    font-size: 60px;
+}
+
+
+.list-container-light h1 {
+    padding-left: 20px; /* Indentation for the list */
+    color: #282c34;
+    transition: color 0.5s ease; /* Smooth transition for color */
+    font-size: 60px;
+}
+
+
+.list-container-dark li {
+    color: #f7f7f7;
+    transition: color 0.5s ease; /* Smooth transition for color */
+    font-size: 40px;
+}
+
+
+.list-container-light li {
+    color: #282c34;
+    transition: color 0.5s ease; /* Smooth transition for color */
+    font-size: 40px;
+}
+
