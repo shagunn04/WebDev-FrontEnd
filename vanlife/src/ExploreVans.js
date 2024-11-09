@@ -2,11 +2,16 @@ import React, { useEffect,useContext } from "react";
 import Card from "./Card";
 import "./css/ExploreVans.css"
 import { Context } from "./GlobalContext/Context";
+import { useSearchParams } from "react-router-dom";
 function ExploreVans() {
-    const { data, setFilter,setData } = useContext(Context); 
+    const { data, setFilter,setData,searchParams } = useContext(Context); 
+    const typeFilter=searchParams.get("type");
+    console.log("type "+typeFilter);
+    
+    
 
-   
-   
+
+
     useEffect(() => {
         const fetchData = async () => {
             try {

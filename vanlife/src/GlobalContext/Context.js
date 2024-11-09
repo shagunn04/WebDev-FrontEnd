@@ -1,12 +1,14 @@
 import React, { createContext, useState, useEffect } from "react";
-
+import { useSearchParams } from "react-router-dom";
 export const Context = createContext();
 
 const ContextProvider = ({ children }) => {
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState("");
     const [FavVans, setFavVans] = useState([]); 
-    const [ReviewSet, setReviewSet] = useState([]); // Ensure this is part of context state
+    const [ReviewSet, setReviewSet] = useState([]); 
+    const [searchParams,setSearchParams]=useSearchParams();
+    
     const [RentVans, setRentVans] = useState([
         {
             selectedVan: {
@@ -33,6 +35,7 @@ const ContextProvider = ({ children }) => {
     ]);
 
     useEffect(() => {
+        setSearchParams({ type: filter});
         const fetchData = async () => {
             try {
                 const response = await fetch("http://localhost:3000/vans");
@@ -84,7 +87,7 @@ const ContextProvider = ({ children }) => {
     }
 
     return (
-        <Context.Provider value={{ data, setFilter, setData, FavVans, addFavourite, RentVans, addRentVans, addReview, ReviewSet }}>
+        <Context.Provider value={{ data, setFilter, setData, FavVans, addFavourite, RentVans, addRentVans, addReview, ReviewSet,searchParams,setSearchParams }}>
             {children}
         </Context.Provider>
     );

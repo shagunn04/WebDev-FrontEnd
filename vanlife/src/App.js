@@ -15,7 +15,8 @@ import RentVan from "./RentVan";
 import WriteReview from "./WriteReview"
 function App() {
   return (
-    <BrowserRouter>
+    
+    
       <div className="App">
         <Navbar />
         <Routes>
@@ -39,7 +40,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </BrowserRouter>
+   
   );
 }
 
