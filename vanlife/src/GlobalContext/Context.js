@@ -6,6 +6,7 @@ const ContextProvider = ({ children }) => {
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState("");
     const [FavVans, setFavVans] = useState([]); 
+    const[filteredData,setfilteredData]=useState([]);
     const [ReviewSet, setReviewSet] = useState([]); 
     const [searchParams,setSearchParams]=useSearchParams();
     
@@ -36,22 +37,16 @@ const ContextProvider = ({ children }) => {
 
     useEffect(() => {
         setSearchParams({ type: filter});
-        const fetchData = async () => {
-            try {
-                const response = await fetch("http://localhost:3000/vans");
-                const result = await response.json();
-                
-                const filteredData = filter
-                    ? result.filter((van) => van.type === filter)
-                    : result;
+          
+                const result = filter
+                    ? data.filter((van) => van.type === filter)
+                    : data;
 
-                setData(filteredData);
-            } catch (error) {
-                console.error("Error fetching data:", error);
-            }
-        };
-
-        fetchData();
+                    setfilteredData(result);
+            
+      
+     console.log(filteredData)
+        
     }, [filter]); 
 
     function addReview(review) {
@@ -87,7 +82,7 @@ const ContextProvider = ({ children }) => {
     }
 
     return (
-        <Context.Provider value={{ data, setFilter, setData, FavVans, addFavourite, RentVans, addRentVans, addReview, ReviewSet,searchParams,setSearchParams }}>
+        <Context.Provider value={{ data, setFilter, setData, FavVans, addFavourite, RentVans, addRentVans, addReview, ReviewSet,searchParams,setSearchParams,filteredData }}>
             {children}
         </Context.Provider>
     );

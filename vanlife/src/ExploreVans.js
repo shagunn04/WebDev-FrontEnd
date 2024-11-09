@@ -4,7 +4,7 @@ import "./css/ExploreVans.css"
 import { Context } from "./GlobalContext/Context";
 import { useSearchParams } from "react-router-dom";
 function ExploreVans() {
-    const { data, setFilter,setData,searchParams } = useContext(Context); 
+    const { data, setFilter,setData,searchParams,filteredData } = useContext(Context); 
     const typeFilter=searchParams.get("type");
     console.log("type "+typeFilter);
     
@@ -25,8 +25,9 @@ function ExploreVans() {
 
         fetchData();
     }, []);
-
-    const Cards = data.map((van) => (
+    
+    const usedData=filteredData.length==0?data:filteredData;
+    const Cards = usedData.map((van) => (
         <Card key={van.id} id={van.id} image={van.image} type={van.type} price={van.price} title={van.title} />
     ));
     console.log(Cards)
@@ -34,6 +35,7 @@ function ExploreVans() {
     return (
         <div className="Explore-Vans">
             <div className="Filter-Buttons">
+            
                 <button onClick={() => setFilter("Camper Van")}>Camper Van</button>
                 <button onClick={() => setFilter("Luxury Van")}>Luxury Van</button>
                 <button onClick={() => setFilter("Minivan")}>Mini Van</button>

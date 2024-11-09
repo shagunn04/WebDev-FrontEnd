@@ -138,6 +138,7 @@ html, body {
     margin-top: auto; /* Pushes the footer to the bottom */
     display: flex;
     flex-direction: column;
+    
 }
 
 
