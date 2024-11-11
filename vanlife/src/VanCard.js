@@ -1,21 +1,28 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useLocation } from "react-router-dom";
 import { Context } from "./GlobalContext/Context";
 import { FaHeart, FaTrash } from 'react-icons/fa';
 import "./css/VanCard.css";
 
 function VanCard() {
-    const { id } = useParams(); 
-    const { data, addFavourite } = useContext(Context); 
+    const { id } = useParams();
+    const { data, addFavourite } = useContext(Context);
     const [van, setVan] = useState(null);
     const [buttonstate, setButton] = useState(true);
-    
+    const location = useLocation();  // Access the current URL and search params
+    const [currentFilters, setCurrentFilters] = useState([]);
+
     useEffect(() => {
         if (data && data.length > 0) {
             const selectedVan = data.find((van) => van.id == parseInt(id));
             setVan(selectedVan || null);
         }
-    }, [id, data]); 
+
+        // Retrieve filters from URL search params
+        const searchParams = new URLSearchParams(location.search);
+        const filters = searchParams.getAll("type");
+        setCurrentFilters(filters);
+    }, [id, data, location]);
 
     function FavbuttonClick(buttonstate, id) {
         setButton((prevstate) => !prevstate);
@@ -26,7 +33,13 @@ function VanCard() {
 
     return (
         <div className="VanCard">
-            <Link to="/vans/ExploreVans" className="back-link">
+            <Link
+                to={{
+                    pathname: "/vans/ExploreVans",
+                    search: currentFilters.length==0?'':`?type=${currentFilters.join("&type=")}` 
+                }}
+                className="back-link"
+            >
                 <p>← Back to all Vans</p>
             </Link>
             <div className="Van-Card-Content">
@@ -37,7 +50,8 @@ function VanCard() {
                         <button
                             className={`FavButton ${buttonstate ? 'add' : 'remove'}`}
                             onClick={() => FavbuttonClick(buttonstate, van.id)}
-                        > {buttonstate ? <FaHeart /> : <FaTrash />}
+                        >
+                            {buttonstate ? <FaHeart /> : <FaTrash />}
                             {buttonstate ? "Add to Favourite Vans" : "Remove from Favourite Vans"}
                         </button>
                     </div>
