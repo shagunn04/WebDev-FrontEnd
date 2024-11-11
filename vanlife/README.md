@@ -1,19 +1,31 @@
-Van Rental App
+# **Van Rental App**
 A React-based application designed for users to explore, rent, and manage vans. It includes a user dashboard, account balance, charts for income analysis, a review system, and the ability to save favorite vans for future rentals.
 
-Features
-User Dashboard
+## **Features**
+### User Dashboard
 Account Balance: View how much you've earned from renting your vans and renting vans for yourself.
 Income Pie Chart: A graphical breakdown showing the income earned from renting out your vans vs. the income spent on rentals.
+
+## Income
 Income Chart: View a graph tracking your total earnings and spending over time.
-Reviews
 Write Reviews: Add reviews for vans you've rented, which will be visible to other users.
+
+## Reviews
+
 Review Graph: View a graph of reviews based on ratings, with high and low star reviews.
-Favorites Section
+Review Cards: Read and analyse the vans as reviewed by other users
+
+## Favorites Section
 Save Favorite Vans: Keep track of your favorite vans for future rentals.
-Vans Page
+
+
+## Vans
 Find Your Beloved Van: Browse through a collection of vans to find your next rental.
 Tech Stack
+VanCard : Click on any Van and read about its description to equip it for your next ride.
+Filter out vans based on your choices and type 
+Add the Van in your favourites directly from the VanCard
+
 React: Frontend framework used to build the app.
 React Router: For routing and navigation between different pages.
 Charts.js or Recharts: For displaying graphs and charts.
