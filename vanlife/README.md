@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+Van Rental App
+A React-based application designed for users to explore, rent, and manage vans. It includes a user dashboard, account balance, charts for income analysis, a review system, and the ability to save favorite vans for future rentals.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+User Dashboard
+Account Balance: View how much you've earned from renting your vans and renting vans for yourself.
+Income Pie Chart: A graphical breakdown showing the income earned from renting out your vans vs. the income spent on rentals.
+Income Chart: View a graph tracking your total earnings and spending over time.
+Reviews
+Write Reviews: Add reviews for vans you've rented, which will be visible to other users.
+Review Graph: View a graph of reviews based on ratings, with high and low star reviews.
+Favorites Section
+Save Favorite Vans: Keep track of your favorite vans for future rentals.
+Vans Page
+Find Your Beloved Van: Browse through a collection of vans to find your next rental.
+Tech Stack
+React: Frontend framework used to build the app.
+React Router: For routing and navigation between different pages.
+Charts.js or Recharts: For displaying graphs and charts.
+useState & useEffect: React hooks for managing component state and side effects.
+useLocation & useParams: React Router hooks for managing URL parameters and routing.
+Context API: For managing and sharing state across components.
+Installation
+Clone the repository:
 
-## Available Scripts
+bash
+Copy code
+git clone https://github.com/your-username/van-rental-app.git
+cd van-rental-app
+Install dependencies:
 
-In the project directory, you can run:
+bash
+Copy code
+npm install
+Start the development server:
 
-### `npm start`
+bash
+Copy code
+npm start
+Open your browser and go to http://localhost:3000 to view the app.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Usage
+User Dashboard
+After logging in, the user will be redirected to their dashboard.
+The dashboard will display:
+Current balance from renting and earning with vans.
+A pie chart showing how much was earned from renting vans and how much was spent on rentals.
+An income chart showing total earnings and spending over time.
+Write and View Reviews
+After renting a van, users can leave a review (rating and feedback) which will be visible in the Reviews section.
+The reviews are displayed along with a graph showing the breakdown of high and low star reviews.
+Favorite Vans
+Users can save vans they like by clicking the "Add to Favorites" button. These vans will be stored in their Favorites section for easy access.
+Find a Van for Your Next Ride
+Browse through the Vans Page, where users can search and filter available vans.
+Clicking on a van will show its details, and users can either rent the van or save it to their favorites.
+Contributing
+Feel free to fork this repository and contribute by creating issues or pull requests.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Fork the repository.
+Create a new branch (git checkout -b feature/your-feature).
+Commit your changes (git commit -am 'Add new feature').
+Push to the branch (git push origin feature/your-feature).
+Open a pull request.
+License
+This project is licensed under the MIT License.

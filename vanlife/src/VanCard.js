@@ -18,7 +18,7 @@ function VanCard() {
             setVan(selectedVan || null);
         }
 
-        // Retrieve filters from URL search params
+       
         const searchParams = new URLSearchParams(location.search);
         const filters = searchParams.getAll("type");
         setCurrentFilters(filters);
