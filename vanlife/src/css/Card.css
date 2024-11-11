@@ -29,7 +29,7 @@
   }
   
   .Card-title {
-    font-size: 1.4em;
+    font-size: 2.0em;
     margin: 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:rgb(5, 79, 140);
@@ -38,7 +38,7 @@
   }
   
   .Card-price {
-    font-size: 1.4em;
+    font-size: 1.7em;
     color: #2da309;
     margin: 0;
     margin-left: 43px;
