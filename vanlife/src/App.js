@@ -13,6 +13,7 @@ import FavVans from "./FavVans"
 import Reviews from "./Reviews";
 import RentVan from "./RentVan";
 import WriteReview from "./WriteReview"
+import Error from "./error";
 function App() {
   return (
     
@@ -20,6 +21,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
+          <Route path="*" element={<Error/>}/>
           <Route path="/" element={<About />} />
           <Route path="/vans" element={<Vans />} />
           
