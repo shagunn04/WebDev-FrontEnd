@@ -1,17 +1,11 @@
-import React, { useEffect,useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import Card from "./Card";
-import "./css/ExploreVans.css"
+import "./css/ExploreVans.css";
 import { Context } from "./GlobalContext/Context";
-import { useSearchParams } from "react-router-dom";
+
 function ExploreVans() {
-    const { data, setFilter,setData,searchParams,filteredData } = useContext(Context); 
-    const typeFilter=searchParams.get("type");
-    console.log("type "+typeFilter);
-    
-    
-
-
-
+    const { data, setData, filteredData, toggleFilter, searchParams } = useContext(Context);
+    const typeFilters = searchParams.getAll("type"); 
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -24,28 +18,27 @@ function ExploreVans() {
         };
 
         fetchData();
-    }, []);
-    
-    const usedData=filteredData.length==0?data:filteredData;
+    }, [setData]);
+    console.log(typeFilters)
+    const usedData = typeFilters.length === 0? data : filteredData;
     const Cards = usedData.map((van) => (
         <Card key={van.id} id={van.id} image={van.image} type={van.type} price={van.price} title={van.title} />
     ));
-    console.log(Cards)
 
     return (
         <div className="Explore-Vans">
             <div className="Filter-Buttons">
-            
-                <button onClick={() => setFilter("Camper Van")}>Camper Van</button>
-                <button onClick={() => setFilter("Luxury Van")}>Luxury Van</button>
-                <button onClick={() => setFilter("Minivan")}>Mini Van</button>
-                <button onClick={() => setFilter("Off-Road Van")}>Off-Road Van</button>
-                <button onClick={() => setFilter("Family Van")}>Family Van</button>
-                <button onClick={() => setFilter("Compact Van")}>Compact Van</button>
-                <button onClick={() => setFilter("Conversion Van")}>Conversion Van</button>
-                <button onClick={() => setFilter("Retro Van")}>Retro Van</button>
+                {["Camper Van", "Luxury Van", "Minivan", "Off-Road Van", "Family Van", "Compact Van", "Conversion Van", "Retro Van"].map((typeofVan) => (
+                    <button
+                        key={typeofVan}
+                        className={typeFilters.includes(typeofVan) ? "active" : ""}
+                        onClick={() => toggleFilter(typeofVan)}
+                    >
+                        {typeofVan}
+                    </button>
+                ))}
                 <div className="Clear">
-                <button onClick={() => setFilter("")}>Clear all Filters</button>
+                    <button onClick={() => toggleFilter("")}>Clear all Filters</button>
                 </div>
             </div>
             <div className="cards-container">{Cards}</div>

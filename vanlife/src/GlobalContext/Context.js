@@ -9,7 +9,7 @@ const ContextProvider = ({ children }) => {
     const[filteredData,setfilteredData]=useState([]);
     const [ReviewSet, setReviewSet] = useState([]); 
     const [searchParams,setSearchParams]=useSearchParams();
-    
+    const [filterState,setFiltertState]=useState(false);
     const [RentVans, setRentVans] = useState([
         {
             selectedVan: {
@@ -34,20 +34,40 @@ const ContextProvider = ({ children }) => {
              type: '+'
         }
     ]);
-
+    
     useEffect(() => {
-        setSearchParams({ type: filter});
-          
-                const result = filter
-                    ? data.filter((van) => van.type === filter)
-                    : data;
+        const currentFilters = searchParams.getAll("type"); 
+        let result = data;
 
-                    setfilteredData(result);
+        if (currentFilters.length > 0) {
+            result = data.filter((van) =>
+                currentFilters.includes(van.type) 
+            );
+        }
+        else{
+            result=data;
+        }
+
+        setfilteredData(result);
+    }, [data, searchParams]);
+    console.log(filteredData);
+    function toggleFilter(type) {
+        const currentFilters = searchParams.getAll("type");
+
+        if (type === "") {
             
-      
-     console.log(filteredData)
-        
-    }, [filter]); 
+            setSearchParams({});
+        } else if (currentFilters.includes(type)) {
+            
+            currentFilters.splice(currentFilters.indexOf(type), 1);
+            setSearchParams({ type: currentFilters });
+        } else {
+           
+            currentFilters.push(type);
+            setSearchParams({ type: currentFilters });
+        }
+    }
+
 
     function addReview(review) {
         setReviewSet((prevSet) => [...prevSet, review]);
@@ -82,7 +102,7 @@ const ContextProvider = ({ children }) => {
     }
 
     return (
-        <Context.Provider value={{ data, setFilter, setData, FavVans, addFavourite, RentVans, addRentVans, addReview, ReviewSet,searchParams,setSearchParams,filteredData }}>
+        <Context.Provider value={{ data, setFilter, setData, FavVans, addFavourite, RentVans, addRentVans, addReview, ReviewSet,searchParams,setSearchParams,filteredData,setFiltertState,toggleFilter }}>
             {children}
         </Context.Provider>
     );
