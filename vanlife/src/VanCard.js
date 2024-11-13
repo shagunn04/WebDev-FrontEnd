@@ -28,7 +28,7 @@ function VanCard() {
         setButton((prevstate) => !prevstate);
         addFavourite(buttonstate, id);
     }
-
+    console.log(currentFilters);
     if (!van) return <div>Loading...</div>;
 
     return (

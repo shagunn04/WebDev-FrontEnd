@@ -51,6 +51,8 @@ const ContextProvider = ({ children }) => {
         setfilteredData(result);
     }, [data, searchParams]);
     console.log(filteredData);
+
+    
     function toggleFilter(type) {
         const currentFilters = searchParams.getAll("type");
 
