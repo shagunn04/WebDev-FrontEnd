@@ -1,70 +1,110 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# LeafNest
 
-## Available Scripts
+LeafNest is a plant-selling website that offers a wide variety of plants, gardening tools, and tips for plant care. It is designed to make buying plants and maintaining them easy for plant enthusiasts and beginners alike. The platform allows users to browse through a wide range of plants, view detailed descriptions, and get personalized care tips for each plant.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Plant Categories**: Users can filter plants by type (e.g., Indoor, Outdoor, Succulents, Air Purifying).
+- **Quick View**: Allows users to see quick details about the plant without leaving the main page.
+- **Plant Care Tips**: Provides detailed tips for each plant to help users maintain a healthy garden.
+- **Customer Reviews**: User reviews and ratings for each plant available on the site.
+- **Download Invoice**: After making a purchase, users can download a detailed invoice for their transaction.
+- **reCAPTCHA Integration**: Prevents spam and bots by requiring users to complete a Google reCAPTCHA before submitting forms (e.g., "Write an Appreciation Letter" submission).
+- **Account Management**: Users can manage their account and orders.
+- **Responsive Design**: The website adapts to all screen sizes, making it mobile-friendly.
+- **Interactive UI**: Features like animations (growing plants) and smooth hover effects enhance the user experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deployment Link
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You can view the live website here: [LeafNest on Netlify](https://67484d4756726c975bc0f2fe--incomparable-duckanoo-c271e1.netlify.app/Nest)
 
-### `npm test`
+## Project Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Make sure you have the following installed on your local machine:
+- [Node.js](https://nodejs.org/) (version 14 or above)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SarimMalik01/LeafNest.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory:
+   ```bash
+   cd LeafNest
+   ```
 
-### `npm run eject`
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Running the Project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. To start the development server:
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Open [http://localhost:3003](http://localhost:3003) in your browser to view the application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Building for Production
 
-## Learn More
+1. To build the app for production:
+   ```bash
+   npm run build
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. The optimized build will be created in the `build` directory, ready to be deployed.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
 
-### Code Splitting
+- **Frontend**: React.js, CSS3
+- **UI/UX**: Responsive design with CSS Flexbox and Grid, animations for smooth user interactions.
+- **State Management**: React's `useState` and `useEffect` hooks
+- **Routing**: React Router for navigation
+- **Google reCAPTCHA**: To prevent spam and ensure valid user interactions
+- **Invoice Generation**: Allows users to download their invoices after making a purchase
+- **Version Control**: Git and GitHub
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Folder Structure
 
-### Analyzing the Bundle Size
+```
+/LeafNest
+│
+├── /public
+│   ├── /models       # Contains GLTF files for 3D models
+│   └── index.html
+│
+├── /src
+│   ├── /components   # Reusable components (Buttons, Cards, etc.)
+│   ├── /pages        # Plant categories, user account pages, etc.
+│   ├── /assets       # Images, icons, and other media
+│   ├── /utils        # Utility functions (e.g., for invoice generation)
+│   └── App.js        # Main app component
+│
+├── /node_modules     # Project dependencies
+├── package.json      # Project metadata and scripts
+└── README.md         # This file
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## How to Contribute
 
-### Making a Progressive Web App
+1. Fork the repository
+2. Create your branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -m 'Add feature'`)
+4. Push to the branch (`git push origin feature-name`)
+5. Create a new pull request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Now your README includes the link to the live deployment on Netlify.
