@@ -1,0 +1,56 @@
+/* Navbar section */
+.Account-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ec8c0d3c;
+    padding: 1rem;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 40px;
+    transition: width 0.3s ease;
+    gap: 100px;
+  }
+  
+  /* Link styles */
+  .Account-navbar a {
+    position: relative;
+    text-decoration: none;
+    color: #4b2e2e;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Added font-size transition */
+    overflow: hidden;
+  }
+  
+  /* Hover background effect */
+  .Account-navbar a:hover {
+    background-color: #cb631465;
+  }
+  
+  /* Sliding underline animation */
+  .Account-navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #4b2e2e;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* Active state with underline */
+  .Account-navbar a.active::after,
+  .Account-navbar a:hover::after {
+    width: 100%;
+  }
+  
+  /* Smooth transition for active link font-size */
+  .Account-navbar a.active {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8rem; /* Increased size for active link */
+    transition: font-size 0.3s ease; /* Smooth transition for font-size */
+  }
+  

@@ -1,0 +1,79 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding: 20px;
+    background-color: #000000; 
+    color: white;
+  }
+  
+  .About {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;  
+    gap: 601px;
+    width: 100%; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left:224px;
+  }
+
+  .About h2{
+    margin: 5px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 10;
+    letter-spacing: 3px;
+    color: #eeeeee; 
+    text-decoration: none;
+    font-size:2.3rem;
+  }
+  
+  .Copyrights {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    margin-top: 20px;
+    gap:20px;
+  }
+  
+  .Copyrights h1, .About h1 {
+    margin: 5px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 10;
+    letter-spacing: 3px;
+  }
+  
+  .Copyrights a {
+    color: #eeeeee; 
+    text-decoration: none; 
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  .Copyrights a:hover {
+    color: rgb(255, 21, 0);
+    transform: scale(1.1);
+  }
+  
+  .Copyrights h1:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+    color: blue;
+  }
+
+  .Copyrights h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  a i {
+    margin-left: 10px; 
+  }
+
+  .github-icon
+  {
+    margin-right: 10px;
+  }
+  

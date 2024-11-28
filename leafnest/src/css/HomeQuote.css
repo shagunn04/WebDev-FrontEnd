@@ -1,0 +1,36 @@
+.HomeQuote {
+    position: relative;
+    width: 95%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 10px;
+    animation: fadein 3s forwards; /* Apply the fade-in effect */
+    flex-direction: column;
+    background-color: transparent; /* Ensure no white background */
+}
+  .HomeQuote h1 {
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: lighter;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+  }
+  
+  /* Animation for sliding effect */
+  @keyframes slideBackground {
+    from {
+      background-position: 100% 0;
+    }
+    to {
+      background-position: 0 0;
+    }
+  }
+  

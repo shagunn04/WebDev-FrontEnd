@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Great+Vibes&family=Inconsolata:wght@200..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Whisper&display=swap');
+
+
+
+
+
+.HomeBlog {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start; 
+    width: 100%;
+   
+    margin: 0 auto;
+  }
+  
+  .HomeBlog-Header {
+    padding: 20px;
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    border-radius: 200px;
+    letter-spacing: 10px;
+    height: fit-content;
+  }
+  
+  .HomeBlog-BlogsList {
+    width: 70%; 
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 700px;
+    gap: 16px;
+    padding: 10px;
+    position: relative; 
+  }
+  
+  .HomeBlog-BlogsList::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .HomeBlog-BlogsList::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  .HomeBlog-controls .scroll-button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+  }
+  
+  
+  .HomeBlog-BlogsList > * {
+    min-height: 101px; 
+    border: 1px solid #ccc;
+   
+  }
+  .HomeBlog-BlogsList.empty {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+  }
+  
+  .HomeBlog-BlogsList.empty::before {
+    content: "No blogs available at the moment.";
+    font-size: 1.2rem;
+    color: #555;
+   margin-top:200px;
+  }
+  

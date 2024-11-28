@@ -1,0 +1,99 @@
+.HomeBlogCard {
+  border-radius: 20px;
+  margin: 15px 0;
+  padding: 30px;
+  background-color: #f5e0f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 
+    box-shadow 0.3s ease-in-out, 
+    transform 0.3s ease-in-out,  /* Added transform transition */
+    max-height 1.6s ease-in-out, 
+    padding 0.6s ease-in-out;
+  overflow: hidden;
+}
+
+/* Magnifying effect on hover */
+.HomeBlogCard:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.006);  /* Scale up the card */
+}
+
+.HomeBlogCard.open {
+  background-color: #f6f0ca;
+  min-height: 524px; /* Adjust based on expanded content length */
+  padding-bottom: 50px; /* Extra padding for expanded state */
+}
+
+.HomeBlogCard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.HomeBlogCard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.HomeBlogCard-top h1 {
+  font-size: 2.2em;
+  margin: 0;
+  flex: 1;
+  font-family: "Merriweather", serif;
+  font-weight: 100;
+}
+
+.HomeBlogCard-top p {
+  margin: 0 10px;
+  color: #666;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2rem;
+}
+
+.HomeBlogCard-top svg {
+  font-size: 1.5em;
+  color: #444;
+}
+
+.HomeBlogCard-down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  gap: 80px;
+}
+
+.HomeBlogCard-down h1 {
+  font-size: 1.4em;
+  margin: 0;
+  color: #444;
+  font-family: "Raleway", sans-serif;  /* Fixed typo in font name */
+}
+
+.HomeBlogCard-down button {
+  background-color: #1d10d5;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.HomeBlogCard-Content {
+  margin-top: 10px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 1.5s ease-in-out, max-height 1.6s ease-in-out;
+  font-size: 1.6rem;
+}
+
+.HomeBlogCard.open .HomeBlogCard-Content {
+  opacity: 1;
+  min-height: 1000px;
+}

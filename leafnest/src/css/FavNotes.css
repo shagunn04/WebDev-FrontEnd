@@ -1,0 +1,28 @@
+.FavNotesSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(533px, 1fr));
+    gap: 20px; /* Adjust spacing between cards */
+    
+    margin-top: 20px;
+  }
+  .noNotes {
+    display: flex;          
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;      
+   
+    text-align: center;   
+    margin-top: 50px;          
+}
+
+.notesGif {
+    width: 700px;      
+    margin-top: 20px;       
+}
+
+.noNotes h1{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: 100;
+
+}
+

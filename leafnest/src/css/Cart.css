@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Whisper&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inconsolata:wght@200..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Whisper&display=swap');
+
+.Cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    
+  }
+  
+  .CartCard-section {
+    width: 100%;
+    max-width: 1600px; 
+  }
+  
+  .CartCard-headline{
+    padding: 20px;
+    background-color: #decd123a;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    border-radius: 200px;
+    letter-spacing: 10px;
+  }
+  
+  .CartCard-List {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+  }
+  
+  .empty-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+   
+    border-radius: 8px;
+   
+  }
+  
+  .empty-cart img {
+    max-width: 300px; 
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .empty-cart p {
+    font-size: 2rem;
+    color: #777;
+  }
+
+  .Cart-RecentlyViewed {
+    margin-top: 20px;
+  }
+  
+  .Cart-RecentlyViewedList {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    scroll-behavior: smooth;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  .Cart-RecentlyViewed-Header{
+    padding: 20px;
+    background-color: #1245de3a;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    border-radius: 200px;
+    letter-spacing: 10px;
+  }
+  .Cart-RecentlyViewedList::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .RecentlyViewed-Wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .scroll-button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .scroll-button.left {
+    position: absolute;
+    left: -10px;
+  }
+  
+  .scroll-button.right {
+    position: absolute;
+    right: -10px;
+  }
+  
+  .RecentlyViewed-Wrapper .Cart-RecentlyViewedList > * {
+    flex: 0 0 calc(33.33% - 10px);
+    min-width:400px;
+  }
+  
+
+  .empty-recently-viewed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .empty-recently-viewed h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .explore-button {
+    background-color: #10801d91;
+    color: white;
+    font-size: 1.5rem;
+    padding: 29px 50px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .explore-button:hover {
+    background-color: #45a049;
+  }
+
+ 
+  
+  .TotalAmount {
+    text-align: left;
+    padding: 20px;
+    border-top: 2px solid #ccc;  
+    border-bottom: 2px solid #ccc;  
+    margin: 20px 0;  
+  }
+  
+  .TotalAmount h1 {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-family: "Merriweather", serif;
+    font-size:2.5rem;
+  }
+
+  .download-invoice-button
+  {
+    background-color: #000000;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .download-invoice-button:disabled {
+    background-color: #ccc; 
+        
+  }
+  

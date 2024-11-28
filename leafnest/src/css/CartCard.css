@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Whisper&display=swap');
+
+
+
+.CartCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; 
+}
+
+.CartCard:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+  .CartCard-img {
+    flex: 1;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .CartCard-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .CartCard-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+  
+  .CartCard-info h1 {
+    font-size: 3.5rem;
+    font-weight:500;
+    margin: 5px 0;
+    font-family:  "Montserrat", sans-serif;
+    
+  }
+  
+  .CartCard-info h2 {
+    font-size: 2.5rem;
+    color: #1b6011;
+    margin: 5px 0;
+    
+  }
+  
+  .CartCard-qty {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .CartCard-qty button {
+    padding: 8px 15px;
+    font-size: 1.9rem;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .CartCard-qty button:hover {
+    background-color: #ea0707;
+  }
+  
+  .CartCard-qty h1 {
+    margin: 0 20px;
+    font-size: 2.5rem;
+  }
+  
+  .CartCard-action {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .CartCard-action button {
+    margin: 5px 0;
+    padding: 8px 16px;
+    font-size: 1.4rem;
+    border: none;
+    background-color: #ff00fb;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .CartCard-action button:hover {
+    background-color: #0056b3;
+  }
+  
+  .CartCard-action button:nth-child(1) {
+    background-color: #dc3545;
+  }
+  
+  .CartCard-action button:nth-child(1):hover {
+    background-color: #0808ee;
+  }
+  

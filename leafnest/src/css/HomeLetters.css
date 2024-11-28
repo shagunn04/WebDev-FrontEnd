@@ -1,0 +1,96 @@
+/* Main container */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Great+Vibes&family=Inconsolata:wght@200..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Whisper&display=swap');
+
+.HomeLetters {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left:100px;
+  }
+  
+  /* Header Styling */
+  .HomeLetters-Header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .HomeLetters-Header h1 {
+    font-size: 3rem;
+    color: #333;
+    font-family: "Lora", serif;
+  }
+  
+  /* List Container for Horizontal Scroll */
+  .HomeLetters-List {
+    display: flex;
+    overflow-x: auto;  /* Enable horizontal scrolling */
+    padding-bottom: 20px;  /* Optional: spacing at the bottom */
+    gap: 15px;  /* Space between cards */
+    width: 2321px; /* Only allow space for 2 cards (320px per card + 15px gap) */
+    scroll-snap-type: x mandatory;  /* Ensures smooth snapping when scrolling */
+    scroll-behavior: smooth;
+  }
+  
+  .HomeLetters-List::-webkit-scrollbar {
+    height: 8px;  /* Set scrollbar height */
+  }
+  
+  .HomeLetters-List::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  .HomeLetters-List::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Cards Layout */
+  .HomeLetterCard {
+    flex: 0 0 auto; /* Prevent stretching; fix the width of each card */
+    width: 750px; /* Set the width of each card */
+    max-width: 800px; /* Ensure the card width is fixed */
+    scroll-snap-align: start; /* Ensure the cards snap properly */
+    height:800px;
+    border-color: #e78c31;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 2px;
+  }
+  
+  /* Scroll Buttons */
+  .scroll-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .scroll-buttons button {
+    background-color: #1d10d5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .scroll-buttons button:hover {
+    background-color: #0056b3;
+  }
+  .HomeLetters-List.empty {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+    height:300px;
+  }
+  
+  .HomeLetters-List.empty::before {
+    content: "No letters available at the moment.";
+    font-size: 1.2rem;
+    color: #555;
+    align-items: center;
+    display: flex;
+    margin-left: 1000px;
+  }

@@ -1,0 +1,57 @@
+.YourBlogSection {
+    position: relative;
+  }
+  
+  .YourBlogControls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+  }
+  
+  .Your-Blog .scroll-button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .scroll-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .Filled-Blogs {
+    overflow-y: auto;
+    max-height: 1000px; /* Set a max-height for the scrollable area */
+    padding: 10px;
+    gap: 80px;
+    display: flex;
+    flex-direction: column; /* Ensure cards are stacked vertically */
+  }
+  
+  .Empty-Blogs {
+    margin-top:200px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .Empty-Blogs h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:2rem;
+  }
+
+
+  .Empty-Blogs img {
+    width: 500px;
+    margin-top: 20px;
+  }
+  
+  .Filled-Blogs {
+    padding: 20px;
+  }
+  

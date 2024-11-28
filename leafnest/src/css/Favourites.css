@@ -1,0 +1,146 @@
+/* Main container for the Favourites section */
+.Favourite-Container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    min-height: 80vh;
+    background-color: #fdfaf6;
+  }
+  
+  /* Left side navbar */
+  .Favourite-Navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #ec8c0d3c;
+    border-radius: 12px;
+    width: 250px;
+    height: 566px;
+  }
+  
+  /* Navbar links */
+  .Favourite-Navbar a {
+    text-decoration: none;
+    color: #4b2e2e;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-size:1.7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .Favourite-Navbar a.active-link {
+    background-color: #cb6314;
+    color: #fff;
+  }
+  
+  .Favourite-Navbar a:hover {
+    background-color: #cb631465;
+    color: #fff;
+  }
+  
+  /* Notes section with filter buttons */
+  .notes-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .notes-filter-buttons {
+    margin-left: 50px;
+    margin-top: 0.5rem;
+    max-width: 155px;
+    max-height: 900px;
+    opacity: 1;
+    display: flex;
+
+ 
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  
+  .notes-filter-buttons button {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size:1.4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Individual button colors */
+  .notes-filter-buttons button:nth-child(1) {
+    background-color: #0d2ae8; /* Watering */
+  }
+  
+  .notes-filter-buttons button:nth-child(2) {
+    background-color: #23a9ab; /* Fertilizing */
+  }
+  
+  .notes-filter-buttons button:nth-child(3) {
+    background-color: #32cd32; /* Repotting */
+  }
+
+  .notes-filter-buttons button:nth-child(4) {
+    background-color: #0f918f; /* Repotting */
+  }
+  
+  
+  .notes-filter-buttons button:nth-child(5) {
+    background-color: #c53f53; 
+  }
+  
+  .notes-filter-buttons button:nth-child(6) {
+    background-color: #ff1493;}
+  
+  
+   /* Aerating the Soil */
+  
+.notes-filter-buttons button:nth-child(7) {
+    background-color: #1e90ff;}
+  
+  .notes-filter-buttons button:nth-child(8) {
+    background-color: #ff6347; /* Munching */
+  }
+  
+  /* Button hover effects */
+  .notes-filter-buttons button:hover {
+    background-color:#360c72;
+    opacity: 0.8;
+  }
+  
+  /* Right side content */
+  .Favourite-Content {
+    flex-grow: 1;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  }
+  /* Styling for active link */
+  .notes-filter-buttons {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+  }
+  
+  .notes-filter-buttons.active {
+    margin-left: 50px;
+    margin-top: 0.5rem;
+    max-width: 155px;
+    max-height: 900px;
+    opacity: 1;
+    display: flex;
+    
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  
+  

@@ -1,0 +1,73 @@
+/* Navbar container */
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f440e;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Brand name container with logo */
+.Brand-Name {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, letter-spacing 0.3s ease;
+  cursor: pointer; /* Add cursor pointer to indicate interactivity */
+}
+
+/* Hover effect for smooth magnification */
+.Brand-Name:hover {
+  transform: scale(1.1); /* Magnify slightly */
+  letter-spacing: 10px; /* Slightly increase letter spacing */
+}
+
+.Brand-Name img {
+  width: 200px;
+  height: auto;
+ 
+}
+
+.Brand-Name h1 {
+  color: white;
+  font-size: 5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 8px;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased; /* Smoother text rendering */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Main navbar links container */
+.Main-Navbar-Links {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+/* Styling for individual navbar links */
+.Main-Navbar-Links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Main-Navbar-Links .active-link {
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+/* Ensures content below navbar takes up the remaining space */
+.content {
+  padding: 20px;
+  flex-grow: 1;
+}

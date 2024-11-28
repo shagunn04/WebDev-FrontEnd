@@ -1,0 +1,151 @@
+.FavouriteNoteCard {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 16px 0;
+    padding: 16px;
+    overflow: hidden;
+    max-width: 530px;
+    transition: transform 0.3s ease;
+    flex-direction: row;
+}
+
+.FavouriteNoteCard:hover {
+    transform: translateY(-5px);
+}
+
+.FavouriteNoteCard-left {
+    
+    margin-right: 16px;
+}
+
+.FavouriteNoteCard-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 200px;
+}
+
+.FavouriteNoteCard-left h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.FavouriteNoteCard-left h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #3b7406;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.FavouriteNoteCard-left h1:last-child {
+    font-size: 20px;
+    color: #888;
+    margin-top: 8px;
+}
+
+.FavouriteNoteCard-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.tag-button {
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 100;
+    transition: background-color 0.3s ease;
+    width:182px;
+}
+
+.FavouriteNoteCard-right button:hover {
+    background-color: #0056b3;
+}
+
+.FavouriteNoteCard-right h1 {
+    font-size: 23px;
+    color: #444;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.FavouriteNoteCard-right p {
+    font-size: 35px;
+    line-height: 1.5;
+    color: #000000;
+    margin-top: 8px;
+}
+
+.FavouriteNoteCard-right h1,
+.FavouriteNoteCard-right p {
+    word-wrap: break-word;
+}
+
+.FavouriteNoteCard .FavouriteNoteCard-left,
+.FavouriteNoteCard .FavouriteNoteCard-right {
+    transition: 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .FavouriteNoteCard {
+        flex-direction: column;
+    }
+
+    .FavouriteNoteCard-left {
+        margin-right: 0;
+    }
+
+    .FavouriteNoteCard-right {
+        margin-top: 16px;
+    }
+}
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .button-container button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    font-size:21px;
+  }
+  
+  .trash-btn {
+    background-color: #ff4d4d;
+    color: white;
+    
+  }
+  
+  .trash-btn:hover {
+    background-color: #ff1a1a;
+  }
+  
+  .done-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .done-btn:hover {
+    background-color: #45a049;
+  }
+
+  .dimmed p{
+    text-decoration: line-through;
+  }

@@ -1,0 +1,39 @@
+.HomeGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    gap: 20px;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+}
+
+.Grid {
+    width: 180vh; /* Enlarge image to 90% of the container width */
+    overflow: hidden;
+    
+}
+
+.Grid img {
+    width: 150vh; /* Make the image tke full width of the parent */
+    height: auto; /* Keep aspect ratio intact */
+    border-radius: 15px;
+    object-fit: cover; /* Ensure image covers the area without distortion */
+}
+
+.PhotoGird-text {
+    margin-top: 30px;
+    color: #ad8d1b;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    text-shadow: 1px 1px 6px rgb(175, 146, 74);
+}
+
+.PhotoGird-text h1 {
+    margin: 0;
+    padding: 0 20px;
+    line-height: 1.3;
+}
