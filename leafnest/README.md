@@ -17,7 +17,7 @@ LeafNest is a plant-selling website that offers a wide variety of plants, garden
 
 ## Deployment Link
 
-You can view the live website here: [LeafNest on Netlify](https://67484d4756726c975bc0f2fe--incomparable-duckanoo-c271e1.netlify.app/Nest)
+You can view the live website here: [LeafNest on Netlify](https://6748564eb958148e7db27f62--vocal-bombolone-565670.netlify.app/)
 
 ## Project Setup
 
