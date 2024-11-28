@@ -1,76 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Great+Vibes&family=Inconsolata:wght@200..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Whisper&display=swap');
 
-
-
-
-
+/* HomeBlog Section */
 .HomeBlog {
-    display: flex; 
-    justify-content: space-between;
-    align-items: flex-start; 
-    width: 100%;
-   
-    margin: 0 auto;
-  }
-  
+  display: flex; 
+  justify-content: space-between;
+  align-items: flex-start; 
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+}
+
+/* Header Section */
+.HomeBlog-Header {
+  padding: 20px;
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+  border-radius: 200px;
+  letter-spacing: 10px;
+  height: fit-content;
+}
+
+/* Blog List Section */
+.HomeBlog-BlogsList {
+  width: 70%; 
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 700px;
+  gap: 16px;
+  padding: 10px;
+  position: relative; 
+}
+
+/* Scrollbar Styling */
+.HomeBlog-BlogsList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.HomeBlog-BlogsList::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+/* Scroll Button */
+.HomeBlog-controls .scroll-button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+}
+
+/* Blog List Items */
+.HomeBlog-BlogsList > * {
+  min-height: 101px; 
+  border: 1px solid #ccc;
+}
+
+/* Empty Blog List */
+.HomeBlog-BlogsList.empty {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+}
+
+.HomeBlog-BlogsList.empty::before {
+  content: "No blogs available at the moment.";
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 200px;
+}
+
+/* Responsiveness for Tablets and Below */
+@media (max-width: 1024px) {
   .HomeBlog-Header {
-    padding: 20px;
-    font-size: 5rem;
-    font-weight: 500;
-    margin-bottom: 20px;
-    text-align: center;
-    font-family: "Great Vibes", cursive;
-    border-radius: 200px;
-    letter-spacing: 10px;
-    height: fit-content;
+    font-size: 4rem;  /* Smaller header font */
+    letter-spacing: 8px;  /* Reduced letter spacing */
   }
-  
+
   .HomeBlog-BlogsList {
-    width: 70%; 
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-    max-height: 700px;
-    gap: 16px;
-    padding: 10px;
-    position: relative; 
+    width: 80%; /* Make the blog list a bit wider */
+    max-height: 600px; /* Adjust max height for tablets */
   }
-  
-  .HomeBlog-BlogsList::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  .HomeBlog-BlogsList::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 10px;
-  }
-  
-  .HomeBlog-controls .scroll-button {
-    border: none;
-    background-color: transparent;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-  }
-  
-  
+
   .HomeBlog-BlogsList > * {
-    min-height: 101px; 
-    border: 1px solid #ccc;
-   
+    min-height: 90px;  /* Slightly reduce card height */
   }
-  .HomeBlog-BlogsList.empty {
-    text-align: center;
-    padding: 20px;
-    color: #aaa;
+
+  .HomeBlog-controls .scroll-button {
+    font-size: 1.3rem; /* Slightly smaller scroll button font */
   }
-  
+}
+
+/* Responsiveness for Mobile Devices */
+@media (max-width: 768px) {
+  .HomeBlog-Header {
+    font-size: 3.5rem;  /* Smaller header font */
+    letter-spacing: 6px;  /* Reduced letter spacing */
+  }
+
+  .HomeBlog-BlogsList {
+    width: 100%; /* Full width for blog list */
+    max-height: 500px; /* Further reduce max-height on mobile */
+  }
+
+  .HomeBlog-BlogsList > * {
+    min-height: 80px;  /* Smaller blog cards */
+  }
+
+  .HomeBlog-controls .scroll-button {
+    font-size: 1.2rem;  /* Smaller scroll button font */
+  }
+}
+
+/* Responsiveness for Very Small Mobile Devices */
+@media (max-width: 480px) {
+  .HomeBlog-Header {
+    font-size: 3rem;  /* Smaller header font */
+    letter-spacing: 4px;  /* Reduced letter spacing */
+  }
+
+  .HomeBlog-BlogsList {
+    width: 100%; /* Full width for blog list */
+    max-height: 400px; /* Reduce max height even more */
+  }
+
+  .HomeBlog-BlogsList > * {
+    min-height: 70px;  /* Further reduce card height */
+  }
+
+  .HomeBlog-controls .scroll-button {
+    font-size: 1rem;  /* Smallest button font */
+  }
+
   .HomeBlog-BlogsList.empty::before {
-    content: "No blogs available at the moment.";
-    font-size: 1.2rem;
-    color: #555;
-   margin-top:200px;
+    font-size: 1rem;  /* Smaller font size for no blogs message */
   }
-  
+}

@@ -1,0 +1,34 @@
+/* Home Page Layout */
+.HomePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 40px; 
+    padding: 20px; 
+  }
+  
+ 
+  @media (max-width: 1024px) {
+    .HomePage {
+      gap: 30px; /* Adjust gap for tablets */
+      padding: 15px; /* Adjust padding */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .HomePage {
+      gap: 20px; /* Reduce gap for mobile */
+      padding: 10px; /* Adjust padding */
+    }
+  
+    .HomeGrid {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .HomeQuote, .HomeBlog, .HomeLetters, .HomeSticker {
+      padding: 15px; /* Reduce padding for very small screens */
+    }
+  }
+  

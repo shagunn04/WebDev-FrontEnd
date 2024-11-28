@@ -1,64 +1,122 @@
 /* HomeLetterCard container */
 .HomeLetterCard {
-    display: flex;
-    flex-direction: column;  /* Arrange content vertically */
-    align-items: flex-start;  /* Align items to the start */
-    background-color: #fde6be;  /* Light background */
-    
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(211, 158, 45, 0.1);  /* Subtle shadow */
-    margin: 15px 0;
-    width: 100%;  /* Adjust based on parent container */
-    max-width: 500px;  /* Optional: Set a max width */
-    box-sizing: border-box;
-    transition: transform 0.3s ease;
-    background-image: url('../images/Home-Letter-bg.jpg');
-    margin-top:50px;
-    background-size:110%; 
-    background-position: center;
+  display: flex;
+  flex-direction: column;  /* Arrange content vertically */
+  align-items: flex-start;  /* Align items to the start */
+  background-color: #fde6be;  /* Light background */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(211, 158, 45, 0.1);  /* Subtle shadow */
+  margin: 15px 0;
+  width: 100%;  /* Adjust based on parent container */
+  max-width: 500px;  /* Optional: Set a max width */
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  background-image: url('../images/Home-Letter-bg.jpg');
+  margin-top: 50px;
+  background-size: 110%; 
+  background-position: center;
+}
+
+.HomeLetterCard:hover {
+  transform: translateY(-5px);  /* Slight lift effect on hover */
+}
+
+/* Header styling */
+.HomeLetterCard-header {
+  display: flex;
+  flex-direction: column;  /* Stack title, stars, and text vertically */
+  width: 100%;
+  align-items: center;
+}
+
+.HomeLetterCard-header h1 {
+  font-size: 2rem;
+  margin: 10px 0 20px 0;
+  color: #333;  /* Darker text for title */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Star rating container */
+.HomeLetterCard-stars {
+  display: flex;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.star-filled {
+  color: #e78c31;  /* Gold for filled stars */
+}
+
+.star-empty {
+  color: #ccc;  /* Light gray for empty stars */
+}
+
+/* Experience paragraph */
+.HomeLetterCard-header p {
+  font-size: 1.4rem;
+  color: #000000;  /* Slightly lighter text */
+  line-height: 1.5;  /* Better readability */
+}
+
+/* Responsiveness for Tablets and Below */
+@media (max-width: 1024px) {
+  .HomeLetterCard {
+      width: 80%;  /* Adjust the card width to be more flexible */
+      max-width: 400px;  /* Reduce max-width for medium screens */
+      padding: 15px;  /* Slightly reduce padding */
   }
-  
-  .HomeLetterCard:hover {
-    transform: translateY(-5px);  /* Slight lift effect on hover */
-  }
-  
-  /* Header styling */
-  .HomeLetterCard-header {
-    display: flex;
-    flex-direction: column;  /* Stack title, stars, and text vertically */
-    width: 100%;
-    align-items: center;
-    
-  }
-  
+
   .HomeLetterCard-header h1 {
-    
-    font-size: 2rem;
-    margin: 10px 0 20px 0;
-    color: #333;  /* Darker text for title */
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+      font-size: 1.8rem;  /* Slightly smaller title */
   }
-  
-  /* Star rating container */
-  .HomeLetterCard-stars {
-    display: flex;
-    font-size: 3.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .star-filled {
-    color: #e78c31;  /* Gold for filled stars */
-  }
-  
-  .star-empty {
-    color: #ccc;  /* Light gray for empty stars */
-  }
-  
-  /* Experience paragraph */
+
   .HomeLetterCard-header p {
-    font-size: 1.4rem;
-    color: #000000;  /* Slightly lighter text */
-    line-height: 1.5;  /* Better readability */
+      font-size: 1.2rem;  /* Adjust paragraph font size */
   }
-  
+
+  .HomeLetterCard-stars {
+      font-size: 3rem;  /* Adjust star size */
+  }
+}
+
+/* Responsiveness for Mobile Devices */
+@media (max-width: 768px) {
+  .HomeLetterCard {
+      width: 90%;  /* Further reduce width on small screens */
+      max-width: 350px;  /* Further reduce max-width */
+      padding: 10px;  /* Reduce padding for small screens */
+  }
+
+  .HomeLetterCard-header h1 {
+      font-size: 1.6rem;  /* Smaller title for mobile */
+  }
+
+  .HomeLetterCard-header p {
+      font-size: 1.1rem;  /* Smaller paragraph text */
+  }
+
+  .HomeLetterCard-stars {
+      font-size: 2.8rem;  /* Smaller star size for mobile */
+  }
+}
+
+/* Responsiveness for Very Small Mobile Devices */
+@media (max-width: 480px) {
+  .HomeLetterCard {
+      width: 100%;  /* Full width for very small screens */
+      max-width: 300px;  /* Max-width further reduced */
+      padding: 8px;  /* Reduce padding */
+  }
+
+  .HomeLetterCard-header h1 {
+      font-size: 1.4rem;  /* Smaller title for very small screens */
+  }
+
+  .HomeLetterCard-header p {
+      font-size: 1rem;  /* Even smaller paragraph text */
+  }
+
+  .HomeLetterCard-stars {
+      font-size: 2rem;  /* Smaller star size for very small screens */
+  }
+}

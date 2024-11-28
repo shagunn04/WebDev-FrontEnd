@@ -1,44 +1,44 @@
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Great+Vibes&family=Inconsolata:wght@200..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Whisper&display=swap');
-
-
 
 /* Hide horizontal scrollbar */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* Optional: To hide overflow horizontally */
+/* Prevent horizontal overflow */
 body {
   overflow-x: hidden;
 }
 
+/* General styling for sections */
 .WriteALetter-section {
   padding: 2rem;
   display: flex;
-  align-items: center;
   justify-content: center;
- 
+  align-items: center;
 }
 
 .Letter-before-section {
   display: flex;
-  gap: 20px; 
+  gap: 20px;
   align-items: center;
   justify-content: center;
 }
 
 .Letter-section,
 .Letter-Preview {
-  flex: 1; /* Each div will take equal width */
-  background-color: #f9f9f9; /* Light background for better visual separation */
+  flex: 1;
+  background-color: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 3rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optonal shadow for depth */
-  width:1100px;
-  margin-left:30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 1100px;
+  margin-left: 30px;
 }
 
+/* Letter Section Styling */
 .Letter-section {
   display: flex;
   flex-direction: column;
@@ -48,89 +48,62 @@ body {
 .Letter-Preview {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the content */
+  align-items: center;
   justify-content: center;
-  text-align: center; /* Align text content */
+  text-align: center;
   background-image: url('../images/Letter-Preview-bg.jpg');
-  margin-top:50px;
-  background-size:95%; 
+  background-size: 95%;
   background-position: center;
-  height:1500px;
+  height: 1500px;
+  margin-top: 50px;
 }
 
-  
-  .Letter-section h1 {
-    font-size: 2.4rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 30px; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  .Letter-Preview h1{
-    font-family: "Great Vibes", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4.5rem;
-  
-    margin-top: 20px;  /* Reduce top margin */
-    margin-bottom: 10px;
-  }
+/* Header styles */
+.Letter-section h1,
+.Letter-Preview h1 {
+  font-size: 2.4rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
+.Letter-Preview h1 {
+  font-family: "Great Vibes", serif;
+  font-weight: 400;
+  font-size: 4.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 
-  .Letter-Preview-p {
-    max-width: 800px; /* Control the width of the text container */
-    margin: 0 auto; /* Center the text block horizontally */
-    padding: 1rem; /* Add padding for better readability */
-    overflow-wrap: break-word; /* Ensure long words wrap within the container */
-    text-align: justify; /* Justify text for a clean look */
-  
-  }
+/* Paragraph inside preview */
+.Letter-Preview-p {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  overflow-wrap: break-word;
+  text-align: justify;
+}
 
-  .Letter-Preview-p p {
-    margin: 0; /* Remove default paragraph margin */
-    font-size: 2.5rem; /* Adjust font size as needed */
-    line-height: 1.5; /* Improve readability with line height */
-    font-family: "Edu AU VIC WA NT Pre", serif;
-  }
+.Letter-Preview-p p {
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-family: "Edu AU VIC WA NT Pre", serif;
+}
 
-
-
-  /* Input Fields */
-  .Letter-section input[type="text"],
-  textarea {
-    width: 97%;
-    padding: 15px; /* Increased padding for larger input fields */
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size:2rem; /* Increased font size for better readability */
-    outline: none;
-    transition: border-color 0.3s ease;
-    box-shadow: 0 20px 8px rgba(0, 0, 0, 0.1);
-
-  }
-  
-  input[type="text"]:focus,
-  textarea:focus {
-    border-color: #0056b3;
-  }
-  
-/* Input Fields */
-.Letter-section input [type="text"],
+/* Input Fields Styling */
+.Letter-section input[type="text"],
 textarea {
-  width: 100%;
-  padding: 10px;
+  width: 97%;
+  padding: 15px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  font-size:1.5rem;
+  font-size: 2rem;
   outline: none;
   transition: border-color 0.3s ease;
-}
-
-textarea {
-  resize: none; 
-  height: 150px; 
+  box-shadow: 0 20px 8px rgba(0, 0, 0, 0.1);
 }
 
 input[type="text"]:focus,
@@ -138,204 +111,205 @@ textarea:focus {
   border-color: #0056b3;
 }
 
+/* Focused input for accessibility */
+.Letter-section input[type="text"]:focus,
+textarea:focus {
+  border-color: #0056b3;
+}
 
-  label {
-    font-size: 2.7rem; /* Increased font size for labels */
-    color: #030623;
-    margin-bottom: 10px; /* Increased margin for better spacing */
-    display: block;
-  }
-  
-  button[type="submit"] {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 15px 10px; /* Increased padding for a larger button */
-    font-size: 2.5rem; /* Increased font size for button */
-    border-radius: 50px;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s ease;
-    margin-top:40px;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #218838;
-  }
-  
-  /* Star Rating Styles */
-  .star-rating {
-    font-size:5rem; /* Increased font size for stars */
-    color: #ffcc00;
-    text-align: center;
-    margin-bottom: 30px; /* Increased margin for better spacing */
-  }
-  
-  /* Slider Styles */
-  input[type="range"] {
-    width: 100%;
-    margin: 20px 0; /* Increased margin for more space around the slider */
-    height: 6px; /* Increased height for a thicker slider */
-    background: #ddd;
-    border-radius: 5px;
-    appearance: none;
-  }
-  
-  input[type="range"]::-webkit-slider-thumb {
-    appearance: none;
-    width: 25px; /* Increased thumb size */
-    height: 25px; /* Increased thumb size */
-    background: #28a745;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  input[type="range"]::-moz-range-thumb {
-    width: 25px; /* Increased thumb size */
-    height: 25px; /* Increased thumb size */
-    background: #28a745;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  input[type="range"]:focus {
-    outline: none;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    .WriteALetter-section {
-      padding: 10px;
-    }
-  
-    .Letter-section {
-      padding: 30px; /* Increased padding for small screens */
-    }
+textarea {
+  resize: none;
+  height: 150px;
+}
+
+/* Label Styling */
+label {
+  font-size: 2.7rem;
+  color: #030623;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Button styling */
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 15px 10px;
+  font-size: 2.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Star Rating Styling */
+.star-rating {
+  font-size: 5rem;
+  color: #ffcc00;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Slider Styling */
+input[type="range"] {
+  width: 100%;
+  margin: 20px 0;
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+  appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #28a745;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .WriteALetter-section {
+    padding: 10px;
   }
 
-  /* Consent Section Styles */
+  .Letter-section {
+    padding: 30px;
+  }
+}
+
+/* Consent Section Styling */
 .Letter-Consent {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* Heading in consent section */
+.Letter-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Consent Section Labels */
+.Letter-Consent label {
+  font-size: 2rem;
+  color: #555;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+/* Checkbox Styles */
+.Letter-Consent input[type="radio"] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Align the checkboxes */
+.Letter-Consent .consent-option {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Letter-Consent .consent-option:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .Letter-Consent {
+    padding: 15px;
   }
-  
-  /* Heading */
-   .Letter-section h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 15px;
-    text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+
+  .Letter-Consent h2 {
+    font-size: 18px;
   }
-  
-  /* Label Styles */
+
   .Letter-Consent label {
-    font-size: 2rem;
-    color: #555;
-    display: inline-block;
-    margin-right: 10px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    font-weight: normal;
+    font-size: 14px;
   }
-  
-  /* Checkbox Styles */
-  .Letter-Consent input[type="radio"] {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-  }
-  
-  /* Align the checkboxes */
-  .Letter-Consent .consent-option {
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  /* Add some space between the two options */
-  .Letter-Consent .consent-option:last-child {
-    margin-bottom: 0;
-  }
-  
-  /* Responsive design for smaller screens */
-  @media (max-width: 600px) {
-    .Letter-Consent {
-      padding: 15px;
-    }
-  
-    .Letter-Consent h2 {
-      font-size: 18px;
-    }
-  
-    .Letter-Consent label {
-      font-size: 14px;
-    }
-  
-    .Letter-Consent input[type="checkbox"] {
-      width: 18px;
-      height: 18px;
-    }
-  }
-  
-  .ReCAPTCHA{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top:30px;
-    }
 
+  .Letter-Consent input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+  }
+}
 
-    /* Styling the Thank-You-section */
+/* reCAPTCHA Section */
+.ReCAPTCHA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Thank You Section Styling */
 .Thank-You-section {
-    text-align: center; /* Centering text horizontally */
-    padding: 150px; /* Add some padding around the content */
-    background-color: #f0f4f8; /* Light background color for a soft feel */
-    border-radius: 8px; /* Slight rounded corners for smoothness */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
-    max-width: 1200px; /* Max width for readability */
-    margin: 20px auto; /* Center the section in the viewport */
-  }
-  
-  /* Style for the main heading */
-  .Thank-You-section h1 {
-    font-size: 3.5rem; /* Larger font for the main heading */
-    font-weight: bold;
-    color: #2c3e50; /* Darker color for a formal feel */
-    margin-bottom: 20px; /* Add some space below the heading */
-    font-family: Georgia, 'Times New Roman', Times, serif;
-   }
-  
-  /* Style for the subheading */
-  .Thank-You-section h2 {
-    font-size: 1.8rem; /* Slightly smaller font for the subheading */
-    font-weight: 600;
-    color: #34495e; /* Lighter dark color for the subheading */
-    margin-top: 10px;
-    margin-bottom: 30px; /* Add some space below the subheading */
-  }
-  
-  /* You can add a styled badge or button for "earned" text */
-  .Thank-You-section .earned {
-    background-color: #3c42e7; /* Red color for emphasis */
-    color: white; /* White text */
-    font-weight: bold;
-    padding: 20px 20px; /* Padding around the text */
-    border-radius: 5px; /* Rounded corners */
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 1.8rem;
-    font-family: 'Times New Roman', Times, serif;
-    letter-spacing: 2px;
-  }
-  
+  text-align: center;
+  padding: 150px;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Thank you section headings */
+.Thank-You-section h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Thank-You-section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* Badge for 'earned' text */
+.Thank-You-section .earned {
+  background-color: #3c42e7;
+  color: white;
+  font-weight: bold;
+  padding: 20px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.8rem;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 2px;
+}
+

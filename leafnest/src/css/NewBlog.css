@@ -1,158 +1,151 @@
 .NewBlog-section {
-    min-height: 100vh;            
-   
-    margin: 0;               
-    padding: 0;               
-    box-sizing: border-box;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;       
+  min-height: 100vh;            
+  margin: 0;               
+  padding: 0;               
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;       
+}
 
-   
-  }
-  
- 
-  .NewBlog-section form {
-    background-color: #ffffff;     
-    padding: 40px;                 
-    border-radius: 10px;            
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    width: 90%;                
-    height: 1000px;                    
-    max-width: 2000px;             
-    box-sizing: border-box;
-    overflow: auto;  
-    margin-top:100px;
-    margin-left: 100px;              
-  }
-  
- 
-  label {
-    display: block;
-    margin-bottom: 10px;
-    color: #333333;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  
+.NewBlog-section form {
+  background-color: #ffffff;     
+  padding: 40px;                 
+  border-radius: 10px;            
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  width: 90%;                
+  height: 1000px;                    
+  max-width: 2000px;             
+  box-sizing: border-box;
+  overflow: auto;  
+  margin-top: 100px;
+  margin-left: 100px;              
+}
 
-  .NewBlog-section input[type="text"],
-  textarea,
-  select {
-    width: 100%;               
-    padding: 14px;      
-    margin-bottom: 25px;      
-    border: 2px solid #ccc;      
-    border-radius: 10px;
-    box-sizing: border-box;
-    font-size: 2rem;             
-  }
-  
- 
-  .NewBlog-section button[type="submit"] {
-    background-color: #ec8c0d3c;
-    color: rgb(45, 33, 2);
-    border: none;
-    padding: 14px 0;           
-    text-transform: uppercase;
-    border-radius: 10px;
-    font-size: 2rem;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s ease;
-    font-weight: 100;
-    font-family:'Times New Roman', Times, serif;
-  }
-  
- 
-  .NewBlog-section button[type="submit"]:not(:disabled):hover {
-    background-color: #1613bf;
-    color: #ffffff;
-  }
-  
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333333;
+  font-family: 'Times New Roman', Times, serif;
+}
 
-  input:focus,
-  textarea:focus,
-  select:focus {
-    outline: none;
-    border-color: #af6b4c;
-    box-shadow: 0 0 8px rgba(175, 144, 76, 0.7);
-  }
-  .formatting-buttons {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-  }
-  
-  .formatting-buttons button {
-    padding: 8px 12px;
-    background-color: #1e21e0;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size:1.4rem;
-  }
-  
-  .formatting-buttons button:hover {
-    background-color: #0e1f5a;
-  }
-  
+.NewBlog-section input[type="text"],
+textarea,
+select {
+  width: 100%;               
+  padding: 14px;      
+  margin-bottom: 25px;      
+  border: 2px solid #ccc;      
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 2rem;             
+}
 
-  textarea {
-    width: 100%;
-    height: 200px;
-    resize: vertical;
-    margin-bottom: 15px;
-  }
-  
+.NewBlog-section button[type="submit"] {
+  background-color: #ec8c0d3c;
+  color: rgb(45, 33, 2);
+  border: none;
+  padding: 14px 0;           
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  font-weight: 100;
+  font-family: 'Times New Roman', Times, serif;
+}
 
-  .preview-section {
-    border: 1px solid #ccc;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    min-height: 200px;
-    white-space: pre-wrap;
-    line-height: 1.6;
-    font-size:2.0rem;
-  }
-  
- 
-  .preview-section strong {
-    font-weight: bold;
-  }
-  
-  .preview-section em {
-    font-style: italic;
-  }
-  
-  .preview-section u {
-    text-decoration: underline;
-  }
-  
-  .NewBlog-section button:disabled {
-    background-color: #ccc;       /* Light gray background */
-    color: #666;           
-    opacity: 0.6;                 /* Reduces opacity */
-    box-shadow: none;             /* Removes any shadow */
-  }
-  
+.NewBlog-section button[type="submit"]:not(:disabled):hover {
+  background-color: #1613bf;
+  color: #ffffff;
+}
 
-  .Saved-Message
-  {
-   
-     background-color: green;
-     align-items: center;
-     justify-content: center;
-     display: flex;
-     margin-top: 20px;
-     border-radius: 10px;
-  }
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #af6b4c;
+  box-shadow: 0 0 8px rgba(175, 144, 76, 0.7);
+}
 
-  .Saved-Message h1{
-     color: #fff;
-     font-family: Georgia, 'Times New Roman', Times, serif;
-     font-size: 1rem;;
-  }
+.formatting-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.formatting-buttons button {
+  padding: 8px 12px;
+  background-color: #1e21e0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.4rem;
+}
+
+.formatting-buttons button:hover {
+  background-color: #0e1f5a;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  resize: vertical;
+  margin-bottom: 15px;
+}
+
+.preview-section {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  min-height: 200px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 2.0rem;
+}
+
+.preview-section strong {
+  font-weight: bold;
+}
+
+.preview-section em {
+  font-style: italic;
+}
+
+.preview-section u {
+  text-decoration: underline;
+}
+
+.NewBlog-section button:disabled {
+  background-color: #ccc;       /* Light gray background */
+  color: #666;           
+  opacity: 0.6;                 /* Reduces opacity */
+  box-shadow: none;             /* Removes any shadow */
+}
+
+.Saved-Message {
+  background-color: green;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Saved-Message h1 {
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: center;
+}

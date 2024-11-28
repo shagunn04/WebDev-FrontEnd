@@ -13,11 +13,10 @@
 .Grid {
     width: 180vh; /* Enlarge image to 90% of the container width */
     overflow: hidden;
-    
 }
 
 .Grid img {
-    width: 150vh; /* Make the image tke full width of the parent */
+    width: 150vh; /* Make the image take full width of the parent */
     height: auto; /* Keep aspect ratio intact */
     border-radius: 15px;
     object-fit: cover; /* Ensure image covers the area without distortion */
@@ -36,4 +35,55 @@
     margin: 0;
     padding: 0 20px;
     line-height: 1.3;
+}
+
+/* Responsiveness for Tablets and Below */
+@media (max-width: 1024px) {
+    .HomeGrid {
+        padding: 30px 20px; /* Adjust padding for medium screens */
+    }
+
+    .Grid {
+        width: 100%; /* Allow grid to take full width */
+    }
+
+    .Grid img {
+        width: 100%; /* Ensure the image takes full width of its parent */
+    }
+
+    .PhotoGird-text {
+        font-size: 2.5rem; /* Reduce font size for medium screens */
+    }
+}
+
+/* Responsiveness for Mobile Devices */
+@media (max-width: 768px) {
+    .HomeGrid {
+        padding: 20px 10px; /* Reduce padding on small devices */
+        height: auto; /* Allow the height to adjust automatically */
+    }
+
+    .Grid {
+        width: 100%; /* Ensure grid takes full width */
+    }
+
+    .Grid img {
+        width: 100%; /* Image width adjusts to the screen width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .PhotoGird-text {
+        font-size: 2rem; /* Reduce font size for small devices */
+    }
+}
+
+/* Responsiveness for Very Small Mobile Devices */
+@media (max-width: 480px) {
+    .HomeGrid {
+        padding: 15px 5px; /* Further reduce padding for very small screens */
+    }
+
+    .PhotoGird-text {
+        font-size: 1.5rem; /* Smaller font size for very small screens */
+    }
 }

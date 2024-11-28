@@ -1,209 +1,234 @@
+/* Search filter container */
 .searchFilter {
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center;    /* Vertically center if needed */
-    height: 10vh; /* Full viewport height to center vertically */
-  }
-  
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;    /* Vertically center if needed */
+  height: 10vh; /* Full viewport height to center vertically */
+}
 
 .search-wrapper {
-    position: relative;
-    width: 500px; /* Adjust width as needed */
-   
-  }
-  
-  .search-input {
-    width: 100%;
-    padding: 10px 35px 10px 15px; /* Space for the icon */
-    border: 1px solid #ddd;
-    border-radius: 25px; /* Rounded corners */
-    outline: none;
-    transition: all 0.3s ease;
-    font-size: 2.6rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.467);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    
-  }
-  
-  .search-input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
-  }
-  
-  .search-icon {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 40px;
-    color: #aaa;
-    pointer-events: none; /* Prevent interaction with the icon */
-  }
-  
+  position: relative;
+  width: 500px; /* Adjust width as needed */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 35px 10px 15px; /* Space for the icon */
+  border: 1px solid #ddd;
+  border-radius: 25px; /* Rounded corners */
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 2.6rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.467);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: #aaa;
+  pointer-events: none; /* Prevent interaction with the icon */
+}
+
+/* Nest-container: Flexbox layout for filter and card sections */
 .Nest-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 60px;
-    padding: 20px;
-  }
-  
-  /* Filter section on the left */
-  .Nest-filter-bar {
-    flex: 1;
-    background-color: #dfbe1a2b;
-    padding: 80px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    max-width: 250px;
-    height: fit-content;
-    overflow-y: auto; /* Ensure buttons are scrollable if the content overflows */
-  }
-  
-   .Clear-filter{
-    background-color: #091f83;
-    border: none;
-    padding: 15px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    color: white;
-    font-size: 1.5em; /* Increased font size */
-    text-align: center; /* Center the text in buttons */
-    margin-left:15px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 20px;
+}
 
+/* Filter section on the left */
+.Nest-filter-bar {
+  flex: 1;
+  background-color: #dfbe1a2b;
+  padding: 80px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+  height: fit-content;
+  overflow-y: auto; /* Ensure buttons are scrollable if the content overflows */
+}
 
-   }
-  .Nest-filter-bar h1{
-    font-size: 3em;
-    color:#9b3a09;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 200;
+.Clear-filter {
+  background-color: #091f83;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: white;
+  font-size: 1.5em; /* Increased font size */
+  text-align: center; /* Center the text in buttons */
+  margin-left: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+.Nest-filter-bar h1 {
+  font-size: 3em;
+  color: #9b3a09;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 200;
+}
 
-  }
-  .Filter {
-    margin-bottom: 40px;
-  }
-  
-  .Filter h2 {
-    font-size: 2.2em;
-    margin-bottom: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #8e1c1c;
-    font-weight: 100;
-  }
-  
-  .Filter-Buttons {
-    display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 10px;
-  }
-  
-  .Filter-Buttons button {
-    background-color: #23d5de;
-    border: none;
-    padding: 15px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    color: white;
-    font-size: 1.9em; /* Increased font size */
-    text-align: center; /* Center the text in buttons */
-  }
-  
-  .Filter-Buttons button:hover {
-    background-color: #dbd470;
-    color:#676262;
-  }
-  
-  /* Card section on the right */
-  .Card-List {
-    flex: 3;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Set 4 cards per row */
-    gap: 20px; /* Adjusted gap between the cards */
-  }
-  /* Card styling */
-  .Card {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .Card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .Card-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease; 
+.Filter {
+  margin-bottom: 40px;
+}
+
+.Filter h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #8e1c1c;
+  font-weight: 100;
+}
+
+.Filter-Buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px;
+}
+
+.Filter-Buttons button {
+  background-color: #23d5de;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: white;
+  font-size: 1.9em; /* Increased font size */
+  text-align: center; /* Center the text in buttons */
+}
+
+.Filter-Buttons button:hover {
+  background-color: #dbd470;
+  color: #676262;
+}
+
+/* Card section on the right */
+.Card-List {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Set 4 cards per row */
+  gap: 20px; /* Adjusted gap between the cards */
+}
+
+/* Card styling */
+.Card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; 
 }
 
 .Card-image img:hover {
-    transform: scale(1.04); 
+  transform: scale(1.04); 
 }
 
-  .Card-Text {
-    padding: 15px;
-  }
-  
-  .Card-Text h1 {
-    font-size: 1.4em;
-    margin: 0 0 10px;
-  }
-  
-  .Card-Text h2 {
-    font-size: 1.2em;
-    color: #888;
-    margin-bottom: 15px;
-  }
-  
-  .Card-Text button {
-    background-color: #ffb3c6;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1.1em; /* Slightly larger font size */
-  }
-  
-  .Card-Text button:hover {
-    background-color: #ff8099;
-  }
-  @media (max-width: 1024px) {
-    .Nest-container {
+.Card-Text {
+  padding: 15px;
+}
+
+.Card-Text h1 {
+  font-size: 1.4em;
+  margin: 0 0 10px;
+}
+
+.Card-Text h2 {
+  font-size: 1.2em;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.Card-Text button {
+  background-color: #ffb3c6;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.1em; /* Slightly larger font size */
+}
+
+.Card-Text button:hover {
+  background-color: #ff8099;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .Nest-container {
       flex-direction: column; /* Stack filter and cards on top of each other */
-    }
-    .Nest-filter-bar {
+  }
+  .Nest-filter-bar {
+    display: flex;
+    flex-direction: row; /* Stack filter and cards on top of each other */
       max-width: 100%;
-    }
-    .Card-List {
+      gap:30px;
+  }
+  .Card-List {
       grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    }
   }
-  
-  @media (max-width: 768px) {
-    .Filter-Buttons {
+}
+
+/* Small Tablets and Large Phones */
+@media (max-width: 768px) {
+  .Filter-Buttons {
       flex-direction: column; /* Stack buttons vertically */
-    }
-    .search-wrapper {
+  }
+  .search-wrapper {
       max-width: 90%; /* Adjust search bar width */
-    }
   }
-  
-  @media (max-width: 480px) {
-    .Card-List {
+  .search-input {
+      font-size: 1.8rem; /* Adjust search input font size */
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .Card-List {
       grid-template-columns: 1fr; /* Single column for smaller screens */
-    }
-    .Filter h2 {
-      font-size: 1rem;
-    }
   }
+  .Filter h2 {
+      font-size: 1rem;
+  }
+  .search-wrapper {
+      width: 100%; /* Full width for search input */
+  }
+  .Card-Text h1 {
+      font-size: 1.2rem; /* Smaller heading size */
+  }
+  .Card-Text h2 {
+      font-size: 1rem; /* Smaller subheading size */
+  }
+  .Card-Text button {
+      font-size: 0.9rem; /* Smaller button text */
+  }
+  .Nest-filter-bar {
+      padding: 40px 15px; /* Reduced padding for smaller screens */
+  }
+}

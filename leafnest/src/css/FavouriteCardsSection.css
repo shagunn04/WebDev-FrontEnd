@@ -1,5 +1,4 @@
-.FavPlantSection
-{
+.FavPlantSection {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(533px, 1fr));
    gap: 20px;
@@ -7,5 +6,26 @@
 
 .dimmed {
     opacity: 0.5;
-  }
+}
 
+/* Responsive Design for smaller screens */
+@media (max-width: 1024px) {
+    .FavPlantSection {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .FavPlantSection {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .FavPlantSection {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 8px;
+    }
+}

@@ -1,10 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inconsolata:wght@200..900&family=Pacifico&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Whisper&display=swap');
-
 
 .FavouritePlantCard {
     width: 500px;
-    height:950px;
+    height: 950px;
     border: 1px solid #ccc;
     border-radius: 8px;
     margin: 15px;
@@ -14,39 +12,38 @@
     display: flex;
     flex-direction: column;
     transition: transform 0.2s ease;
-  }
-  
-  .FavouritePlantCard:hover {
+}
+
+.FavouritePlantCard:hover {
     transform: scale(1.05);
- }
-  
-  .Image {
+}
+
+.Image {
     position: relative;
     height: 600px;
     overflow: hidden;
     margin-bottom: 20px;
-  }
-  
-  .Image img {
+}
+
+.Image img {
     width: 100%;
     height: 100%;
     border-radius: 8px;
     transition: transform 0.3s ease;
-  }
+}
 
-  .Image img:hover{
+.Image img:hover {
     transform: scale(1.05);
-  }
+}
 
-  
-  .View-Buttons {
+.View-Buttons {
     position: absolute;
     top: 10px;
     left: 10px;
     display: flex;
-  }
-  
-  .View-Buttons button {
+}
+
+.View-Buttons button {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     border: none;
@@ -55,48 +52,44 @@
     font-size: 1.5rem;
     cursor: pointer;
     margin-right: 5px;
-  }
-  
-  .View-Buttons button:hover {
+}
+
+.View-Buttons button:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  .FavouritePlantCard-header {
+}
+
+.FavouritePlantCard-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-  }
-  
-  .FavouritePlantCard-header h1 {
+}
+
+.FavouritePlantCard-header h1 {
     font-size: 3.5rem;
-    font-weight:100;
+    font-weight: 100;
     color: #333;
     font-family: "Pacifico", serif;
+}
 
-  }
-  
-   
-  
-  .FavouritePlantCard-header-price-Title
-  {
+.FavouritePlantCard-header-price-Title {
     display: flex;
     flex-direction: column;
-  }
-  .FavouritePlantCard-header h2:nth-child(2) {
+}
+
+.FavouritePlantCard-header h2:nth-child(2) {
     color: #2c6f2f;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2rem;
-  }
-  
-  .FavouritePlantCard-Button {
+}
+
+.FavouritePlantCard-Button {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-  
-  .FavouritePlantCard-Button button {
-   
+}
+
+.FavouritePlantCard-Button button {
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
@@ -104,33 +97,32 @@
     cursor: pointer;
     border: none;
     transition: background-color 0.3s ease;
-  }
-  
+}
 
-  .FavButton{
+.FavButton {
     background-color: #c522a7;
-  }
+}
 
-   .CartButton{
+.CartButton {
     background-color: #ce382a;
-   }
+}
 
-  .FavouritePlantCard-Button button:hover {
+.FavouritePlantCard-Button button:hover {
     background-color: #0056b3;
-  }
-  
-  .FavouritePlantCard-Content {
+}
+
+.FavouritePlantCard-Content {
     margin-bottom: 15px;
-  }
-  
-  .FavouritePlantCard-Content h1 {
+}
+
+.FavouritePlantCard-Content h1 {
     font-size: 1.4rem;
     color: #888;
     margin: 5px 0;
     font-weight: 500;
-  }
-  
-  .FavouritePlantCard-Content button {
+}
+
+.FavouritePlantCard-Content button {
     background-color: #f49051;
     color: #ffffff;
     padding: 10px 20px;
@@ -139,68 +131,69 @@
     border: none;
     cursor: pointer;
     margin-top: 5px;
-  }
-  
-  .FavouritePlantCard-Content button:hover {
+}
+
+.FavouritePlantCard-Content button:hover {
     background-color: #eda43e;
-  }
-  
-  .tags {
+}
+
+.tags {
     margin-top: 10px;
     padding: 15px;
     border-radius: 8px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-  }
-  
-  .tags p {
+}
+
+.tags p {
     flex-basis: 100%;
     font-size: 1.5rem;
     color: #555;
-  }
-  
-  .tags button {
+}
+
+.tags button {
     background-color: #e2e2e2;
     border: none;
     padding: 10px 20px;
     font-size: 1.4rem;
     border-radius: 20px;
     cursor: pointer;
-  }
-  
-  .tags button:hover {
+}
+
+.tags button:hover {
     background-color: #ccc;
-  }
-  
-  .tags button:nth-child(1) {
-    background-color: #f7dd19; /* Light red for description button */
+}
+
+.tags button:nth-child(1) {
+    background-color: #f7dd19;
     color: #fff;
 }
 
 .tags button:nth-child(2) {
-    background-color: #f5b70b; /* Light orange for sunlight button */
+    background-color: #f5b70b;
     color: #fff;
 }
 
 .tags button:nth-child(3) {
-    background-color: #0d7b0d; /* Light green for maintenance button */
+    background-color: #0d7b0d;
     color: #fff;
 }
 
 .tags button:nth-child(4) {
-    background-color: #0563a2; /* Light blue for watering button */
+    background-color: #0563a2;
     color: #fff;
 }
 
 .tags button:nth-child(5) {
-    background-color: #780678; /* Light purple for benefits button */
+    background-color: #780678;
     color: #fff;
 }
 
 .tags button:hover {
-    opacity: 0.8; /* Add hover effect to buttons */
+    opacity: 0.8;
 }
+
 .NoteDialog {
     background-color: #fff;
     border: 2px solid #ccc;
@@ -214,96 +207,21 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  
-  .NoteDialog-options {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .NoteDialog {
-  background-color: #fff;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  margin-top: 20px;
-  width: 100%;
-  max-width: 450px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-family: 'Roboto Mono', monospace;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .NoteDialog-options {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .NoteDialog-options label {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #444;
-}
-
-.NoteDialog-options h3{
-    font-weight: 400;
-}
-.NoteDialog-options select {
-  padding: 10px;
-  font-size: 1.4rem;
-  border: 2px solid #d1d1d1;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  cursor: pointer;
-  transition: border-color 0.3s ease;
-}
-
-.NoteDialog-options select:focus {
-  border-color: #78c91c; /* Green border on focus */
-}
-
-.NoteDialog-options textarea {
-  padding: 15px;
-  font-size: 1.4rem;
-  border: 2px solid #d1d1d1;
-  border-radius: 10px;
-  resize: vertical;
-  background-color: #f5f5f5;
-  transition: border-color 0.3s ease;
-  font-family: 'Roboto Mono', monospace;
-}
-
-.NoteDialog-options textarea:focus {
-  border-color: #56a3f1; /* Blue border on focus */
-}
-
-.NoteDialog-options button {
-  background-color: #f49051;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.6rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.NoteDialog-options button:hover {
-  background-color: #eda43e;
-}
-
-  
-  .NoteDialog-options label {
     font-size: 1.2rem;
     font-weight: 500;
     color: #444;
-  }
-  
-  .NoteDialog-options select {
+}
+
+.NoteDialog-options select {
     padding: 10px;
     font-size: 1.4rem;
     border: 2px solid #d1d1d1;
@@ -311,13 +229,13 @@
     background-color: #f9f9f9;
     cursor: pointer;
     transition: border-color 0.3s ease;
-  }
-  
-  .NoteDialog-options select:focus {
-    border-color: #78c91c; /* Green border on focus */
-  }
-  
-  .NoteDialog-options textarea {
+}
+
+.NoteDialog-options select:focus {
+    border-color: #78c91c;
+}
+
+.NoteDialog-options textarea {
     padding: 15px;
     font-size: 1.4rem;
     border: 2px solid #d1d1d1;
@@ -326,13 +244,13 @@
     background-color: #f5f5f5;
     transition: border-color 0.3s ease;
     font-family: 'Roboto Mono', monospace;
-  }
-  
-  .NoteDialog-options textarea:focus {
-    border-color: #0080ff; 
-  }
-  
-  .NoteDialog-options button {
+}
+
+.NoteDialog-options textarea:focus {
+    border-color: #0080ff;
+}
+
+.NoteDialog-options button {
     background-color: #1010e2;
     color: white;
     padding: 12px;
@@ -341,23 +259,80 @@
     font-size: 1.6rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .NoteDialog-options button:hover {
-    background-color: #eda43e;
-  }
+}
 
-  .note-saved-message
-  {
-    color:white;
+.NoteDialog-options button:hover {
+    background-color: #eda43e;
+}
+
+.note-saved-message {
+    color: white;
     background-color: green;
-    padding :10px 10px;
+    padding: 10px 10px;
     border-radius: 20px;
-    margin-top:20px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .FavouritePlantCard {
+        width: 450px;
+        height: 800px;
+    }
+    .FavouritePlantCard-header h1 {
+        font-size: 2.5rem;
+    }
+    .FavouritePlantCard-header h2 {
+        font-size: 1.8rem;
+    }
+}
 
-  
+@media (max-width: 768px) {
+    .FavouritePlantCard {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .Image {
+        height: 350px;
+    }
+    .FavouritePlantCard-header h1 {
+        font-size: 2rem;
+    }
+    .FavouritePlantCard-header h2 {
+        font-size: 1.5rem;
+    }
+    .FavouritePlantCard-Button button {
+        font-size: 1rem;
+    }
+    .tags button {
+        font-size: 1.2rem;
+        padding: 8px 16px;
+    }
+    .NoteDialog {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .FavouritePlantCard {
+        width: 100%;
+        padding: 5px;
+    }
+    .FavouritePlantCard-header h1 {
+        font-size: 1.8rem;
+    }
+    .FavouritePlantCard-header h2 {
+        font-size: 1.3rem;
+    }
+    .tags button {
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+    .NoteDialog-options button {
+        font-size: 1.4rem;
+    }
+}

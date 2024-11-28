@@ -31,7 +31,6 @@
 .Brand-Name img {
   width: 200px;
   height: auto;
- 
 }
 
 .Brand-Name h1 {
@@ -43,7 +42,6 @@
   -webkit-font-smoothing: antialiased; /* Smoother text rendering */
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 /* Main navbar links container */
 .Main-Navbar-Links {
@@ -70,4 +68,75 @@
 .content {
   padding: 20px;
   flex-grow: 1;
+}
+
+/* Responsive Design for Tablets */
+@media screen and (max-width: 1024px) {
+  .Navbar {
+    padding: 10px 15px;
+  }
+
+  .Brand-Name h1 {
+    font-size: 4rem; /* Reduce font size */
+    letter-spacing: 5px;
+  }
+
+  .Main-Navbar-Links {
+    gap: 30px; /* Reduce gap between links */
+  }
+
+  .Main-Navbar-Links a {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive Design for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .Navbar {
+    flex-direction: column; /* Stack brand and links vertically */
+    padding: 10px;
+  }
+
+  .Brand-Name {
+    margin-bottom: 10px;
+  }
+
+  .Brand-Name img {
+    width: 150px; /* Reduce logo size */
+  }
+
+  .Brand-Name h1 {
+    font-size: 3rem; /* Further reduce font size */
+    letter-spacing: 3px;
+  }
+
+  .Main-Navbar-Links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 20px;
+  }
+
+  .Main-Navbar-Links a {
+    font-size: 1rem; /* Adjust font size */
+    text-align: center;
+  }
+}
+
+/* Extra Small Devices (Phones) */
+@media screen and (max-width: 480px) {
+  .Brand-Name h1 {
+    font-size: 2.5rem; /* Smaller font size */
+    letter-spacing: 2px;
+  }
+
+  .Brand-Name img {
+    width: 120px; /* Smaller logo */
+  }
+
+  .Main-Navbar-Links a {
+    font-size: 0.9rem; /* Adjust font size for better readability */
+  }
+
+  .content {
+    padding: 10px; /* Reduce padding for small screens */
+  }
 }

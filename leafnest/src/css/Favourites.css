@@ -1,146 +1,227 @@
 /* Main container for the Favourites section */
 .Favourite-Container {
-    display: flex;
-    gap: 2rem;
-    padding: 2rem;
-    min-height: 80vh;
-    background-color: #fdfaf6;
-  }
-  
-  /* Left side navbar */
-  .Favourite-Navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 80vh;
+  background-color: #fdfaf6;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Left side navbar */
+.Favourite-Navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #ec8c0d3c;
+  border-radius: 12px;
+  width: 250px;
+  height: 566px;
+  flex-shrink: 0;
+}
+
+.Favourite-Navbar a {
+  text-decoration: none;
+  color: #4b2e2e;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Favourite-Navbar a.active-link {
+  background-color: #cb6314;
+  color: #fff;
+}
+
+.Favourite-Navbar a:hover {
+  background-color: #cb631465;
+  color: #fff;
+}
+
+/* Notes section with filter buttons */
+.notes-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.notes-filter-buttons {
+  margin-left: 50px;
+  margin-top: 0.5rem;
+  max-width: 155px;
+  max-height: 900px;
+  opacity: 1;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.notes-filter-buttons button {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Individual button colors */
+.notes-filter-buttons button:nth-child(1) {
+  background-color: #0d2ae8; /* Watering */
+}
+
+.notes-filter-buttons button:nth-child(2) {
+  background-color: #23a9ab; /* Fertilizing */
+}
+
+.notes-filter-buttons button:nth-child(3) {
+  background-color: #32cd32; /* Repotting */
+}
+
+.notes-filter-buttons button:nth-child(4) {
+  background-color: #0f918f; /* Repotting */
+}
+
+.notes-filter-buttons button:nth-child(5) {
+  background-color: #c53f53;
+}
+
+.notes-filter-buttons button:nth-child(6) {
+  background-color: #ff1493;
+}
+
+/* Aerating the Soil */
+.notes-filter-buttons button:nth-child(7) {
+  background-color: #1e90ff;
+}
+
+.notes-filter-buttons button:nth-child(8) {
+  background-color: #ff6347; /* Munching */
+}
+
+/* Button hover effects */
+.notes-filter-buttons button:hover {
+  background-color: #360c72;
+  opacity: 0.8;
+}
+
+/* Right side content */
+.Favourite-Content {
+  flex-grow: 1;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for active link */
+.notes-filter-buttons {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.notes-filter-buttons.active {
+  margin-left: 50px;
+  margin-top: 0.5rem;
+  max-width: 155px;
+  max-height: 900px;
+  opacity: 1;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 1024px (Tablets) */
+@media (max-width: 1024px) {
+  .Favourite-Container {
+    flex-direction: column; /* Stack the container vertically */
     gap: 1rem;
     padding: 1rem;
-    background-color: #ec8c0d3c;
-    border-radius: 12px;
-    width: 250px;
-    height: 566px;
   }
-  
-  /* Navbar links */
-  .Favourite-Navbar a {
-    text-decoration: none;
-    color: #4b2e2e;
-    font-size: 1.4rem;
-    padding: 0.5rem;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    font-size:1.7rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  .Favourite-Navbar {
+    width: 100%; /* Full width navbar on smaller screens */
+    height: auto; /* Remove fixed height */
   }
-  
-  .Favourite-Navbar a.active-link {
-    background-color: #cb6314;
-    color: #fff;
-  }
-  
-  .Favourite-Navbar a:hover {
-    background-color: #cb631465;
-    color: #fff;
-  }
-  
-  /* Notes section with filter buttons */
-  .notes-section {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
+
   .notes-filter-buttons {
-    margin-left: 50px;
-    margin-top: 0.5rem;
-    max-width: 155px;
-    max-height: 900px;
-    opacity: 1;
-    display: flex;
-
- 
-    gap: 0.5rem;
-    flex-direction: column;
-  }
-  
-  .notes-filter-buttons button {
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size:1.4rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  /* Individual button colors */
-  .notes-filter-buttons button:nth-child(1) {
-    background-color: #0d2ae8; /* Watering */
-  }
-  
-  .notes-filter-buttons button:nth-child(2) {
-    background-color: #23a9ab; /* Fertilizing */
-  }
-  
-  .notes-filter-buttons button:nth-child(3) {
-    background-color: #32cd32; /* Repotting */
+    margin-left: 20px; /* Reduce margin on smaller screens */
   }
 
-  .notes-filter-buttons button:nth-child(4) {
-    background-color: #0f918f; /* Repotting */
-  }
-  
-  
-  .notes-filter-buttons button:nth-child(5) {
-    background-color: #c53f53; 
-  }
-  
-  .notes-filter-buttons button:nth-child(6) {
-    background-color: #ff1493;}
-  
-  
-   /* Aerating the Soil */
-  
-.notes-filter-buttons button:nth-child(7) {
-    background-color: #1e90ff;}
-  
-  .notes-filter-buttons button:nth-child(8) {
-    background-color: #ff6347; /* Munching */
-  }
-  
-  /* Button hover effects */
-  .notes-filter-buttons button:hover {
-    background-color:#360c72;
-    opacity: 0.8;
-  }
-  
-  /* Right side content */
   .Favourite-Content {
-    flex-grow: 1;
+    margin-top: 1rem; /* Add space between navbar and content */
+  }
+
+  .notes-filter-buttons button {
+    font-size: 1.3rem; /* Smaller button size on tablets */
+  }
+}
+
+/* For screens smaller than 768px (Mobile) */
+@media (max-width: 768px) {
+  .Favourite-Container {
+    flex-direction: column; /* Stack the container vertically */
     padding: 1rem;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
   }
-  /* Styling for active link */
+
+  .Favourite-Navbar {
+    width: 100%; /* Full width navbar on mobile */
+    height: auto; /* Remove fixed height */
+  }
+
   .notes-filter-buttons {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+    margin-left: 0; /* Remove left margin on mobile */
+    max-width: 100%; /* Allow buttons to take full width */
   }
-  
-  .notes-filter-buttons.active {
-    margin-left: 50px;
-    margin-top: 0.5rem;
-    max-width: 155px;
-    max-height: 900px;
-    opacity: 1;
-    display: flex;
-    
-    gap: 0.5rem;
-    flex-direction: column;
+
+  .Favourite-Content {
+    padding: 0.8rem; /* Slightly reduced padding on mobile */
   }
-  
-  
+
+  .notes-filter-buttons button {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+  }
+
+  .Favourite-Navbar a {
+    font-size: 1.6rem; /* Adjust navbar link font size for mobile */
+  }
+}
+
+/* For screens smaller than 480px (Very Small Mobile Screens) */
+@media (max-width: 480px) {
+  .Favourite-Container {
+    padding: 0.5rem; /* Reduce padding for very small screens */
+  }
+
+  .Favourite-Navbar {
+    width: 100%;
+    height: auto;
+  }
+
+  .notes-filter-buttons {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .Favourite-Content {
+    padding: 0.5rem;
+  }
+
+  .notes-filter-buttons button {
+    font-size: 1.1rem; /* Further reduce font size for very small screens */
+  }
+
+  .Favourite-Navbar a {
+    font-size: 1.4rem; /* Smaller navbar link font size for very small screens */
+  }
+}

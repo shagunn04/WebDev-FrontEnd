@@ -1,41 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Great+Vibes&family=Inconsolata:wght@200..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Whisper&display=swap');
 
-
+/* Homesticker Section */
 .Homesticker {
-    text-align: center;
-    margin-top:100px;
-  }
-  
-
-  
-.Homesticker h1{
-    font-family: "Edu AU VIC WA NT Pre", serif;
-    font-size: 3rem;
+  text-align: center;
+  margin-top: 100px;
 }
+
+.Homesticker h1 {
+  font-family: "Edu AU VIC WA NT Pre", serif;
+  font-size: 3rem;
+}
+
+/* Stickers container grid layout */
+.stickers-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Sticker item styling */
+.stickers-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.stickers-container img {
+  max-width: 900px; /* Adjust the size of the images */
+  margin-bottom: 10px;
+}
+
+.stickers-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 5px;
+  font-family: "Cairo", serif;
+}
+
+/* Responsive Design: For tablets and below */
+@media (max-width: 1024px) {
+  .Homesticker h1 {
+    font-size: 2.5rem; /* Adjust font size on medium screens */
+  }
+
   .stickers-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
-    gap: 20px; /* Space between the items */
-    margin-top: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Maintain two columns */
   }
-  
-  .stickers-container > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
+
   .stickers-container img {
-    max-width: 900px; /* Adjust the size of the images */
-    margin-bottom: 10px;
+    max-width: 80%; /* Reduce image size */
   }
-  
+}
+
+/* Responsive Design: For mobile devices */
+@media (max-width: 768px) {
+  .Homesticker h1 {
+    font-size: 2rem; /* Smaller font for mobile screens */
+  }
+
+  .stickers-container {
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    gap: 10px; /* Reduced gap for mobile */
+  }
+
+  .stickers-container img {
+    max-width: 100%; /* Ensure images fit inside container */
+  }
+
   .stickers-container h1 {
-    font-size: 2rem;
-    color: #333;
-    margin-top: 5px;
-    font-family: "Cairo", serif;
+    font-size: 1.5rem; /* Reduce text size for mobile screens */
   }
-  
+}
+
+/* Responsive Design: For small mobile devices */
+@media (max-width: 480px) {
+  .Homesticker h1 {
+    font-size: 1.5rem; /* Even smaller font on very small screens */
+  }
+
+  .stickers-container h1 {
+    font-size: 1.2rem; /* Adjust sticker title font size */
+  }
+}

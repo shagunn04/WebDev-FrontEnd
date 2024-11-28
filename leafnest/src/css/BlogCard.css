@@ -1,77 +1,158 @@
+/* BlogCard Base Styles */
 .BlogCard {
-    display: flex;
-    flex-direction: column; 
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .BlogCard:hover {
-    transform: scale(1.02); 
-  }
-  
-  .BlogCard-header {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    margin-bottom: 15px;
-  }
-  
-  .BlogCard-header h1 {
-    font-size: 2.8rem;
-    margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 200;
-  }
-  
-  .BlogCard-header p {
-    font-size: 1rem;
-    margin: 0;
-  }
-  
-  .BlogCard-header button {
-    padding: 10px 20px;
-    font-size: 2rem;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  .BlogCard-Content {
-    flex-grow: 1; 
-    margin-bottom: 15px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2.1rem;
-  }
-  
- 
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
 
-  .BlogCard button {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
+.BlogCard:hover {
+  transform: scale(1.02);
+}
+
+/* Header Section */
+.BlogCard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.BlogCard-header h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 200;
+}
+
+.BlogCard-header p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Header Button */
+.BlogCard-header button {
+  padding: 10px 20px;
+  font-size: 2rem;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Content Section */
+.BlogCard-Content {
+  flex-grow: 1;
+  margin-bottom: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.1rem;
+}
+
+/* Buttons */
+.BlogCard button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.BlogCard button:hover {
+  opacity: 0.9;
+}
+
+/* Views Button */
+.Views button {
+  background-color: #ffc800;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 1.7rem;
+  border-radius: 20px;
+}
+
+.Views button svg {
+  margin-right: 5px;
+}
+
+/* Responsive Design for Tablets */
+@media screen and (max-width: 1024px) {
+  .BlogCard {
+    padding: 15px;
   }
-  
-  .BlogCard button:hover {
-    opacity: 0.9;
+
+  .BlogCard-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .BlogCard-Content {
+    font-size: 1.8rem;
+  }
+
+  .BlogCard-header button {
+    font-size: 1.8rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Responsive Design for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .BlogCard {
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow for mobile */
+  }
+
+  .BlogCard-header {
+    flex-direction: column; /* Stack header content vertically */
+    align-items: flex-start;
+  }
+
+  .BlogCard-header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .BlogCard-header button {
+    font-size: 1.6rem;
+    padding: 8px 14px;
+  }
+
+  .BlogCard-Content {
+    font-size: 1.6rem;
   }
 
   .Views button {
-    background-color: #ffc800;
-    display: flex;
-    align-items: center;
-    color:black;
-    font-size: 1.7rem;
-    border-radius: 20px;
+    font-size: 1.4rem;
+    padding: 6px 10px;
   }
-  
-  .Views button svg {
-    margin-right: 5px;
+}
+
+/* Extra Small Devices (Phones in Portrait Mode) */
+@media screen and (max-width: 480px) {
+  .BlogCard {
+    padding: 8px;
   }
+
+  .BlogCard-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .BlogCard-Content {
+    font-size: 1.4rem;
+  }
+
+  .BlogCard-header button {
+    font-size: 1.4rem;
+    padding: 6px 12px;
+  }
+
+  .Views button {
+    font-size: 1.2rem;
+    border-radius: 15px;
+  }
+}

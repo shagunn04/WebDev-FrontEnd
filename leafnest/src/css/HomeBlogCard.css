@@ -1,3 +1,4 @@
+/* HomeBlogCard */
 .HomeBlogCard {
   border-radius: 20px;
   margin: 15px 0;
@@ -96,4 +97,101 @@
 .HomeBlogCard.open .HomeBlogCard-Content {
   opacity: 1;
   min-height: 1000px;
+}
+
+/* Responsiveness for Tablets and Below */
+@media (max-width: 1024px) {
+  .HomeBlogCard {
+    padding: 20px;  /* Reduce padding */
+  }
+
+  .HomeBlogCard-top h1 {
+    font-size: 1.8em;  /* Slightly smaller title */
+  }
+
+  .HomeBlogCard-top p {
+    font-size: 1.6rem;  /* Adjust paragraph font size */
+  }
+
+  .HomeBlogCard-down {
+    gap: 40px;  /* Reduce gap between elements */
+  }
+
+  .HomeBlogCard-down h1 {
+    font-size: 1.2em;  /* Reduce heading font size */
+  }
+
+  .HomeBlogCard-down button {
+    padding: 6px 10px;  /* Adjust button padding */
+    font-size: 1em;  /* Adjust button font size */
+  }
+
+  .HomeBlogCard-Content {
+    font-size: 1.4rem;  /* Adjust font size for smaller screens */
+  }
+}
+
+/* Responsiveness for Mobile Devices */
+@media (max-width: 768px) {
+  .HomeBlogCard {
+    padding: 15px;  /* Further reduce padding */
+  }
+
+  .HomeBlogCard-top h1 {
+    font-size: 1.6em;  /* Smaller title font size */
+  }
+
+  .HomeBlogCard-top p {
+    font-size: 1.4rem;  /* Smaller paragraph font size */
+  }
+
+  .HomeBlogCard-down {
+    flex-direction: column;  /* Stack items vertically */
+    gap: 20px;  /* Reduce gap between elements */
+  }
+
+  .HomeBlogCard-down h1 {
+    font-size: 1.1em;  /* Further reduce heading size */
+  }
+
+  .HomeBlogCard-down button {
+    font-size: 1.1em;  /* Slightly larger button size for mobile */
+  }
+
+  .HomeBlogCard-Content {
+    font-size: 1.3rem;  /* Adjust content font size for mobile */
+  }
+}
+
+/* Responsiveness for Very Small Mobile Devices */
+@media (max-width: 480px) {
+  .HomeBlogCard {
+    padding: 10px;  /* Further reduce padding */
+  }
+
+  .HomeBlogCard-top h1 {
+    font-size: 1.4em;  /* Smaller title font size */
+  }
+
+  .HomeBlogCard-top p {
+    font-size: 1.2rem;  /* Smaller paragraph text */
+  }
+
+  .HomeBlogCard-down {
+    flex-direction: column;  /* Stack items vertically */
+    gap: 10px;  /* Tighten gap between elements */
+  }
+
+  .HomeBlogCard-down h1 {
+    font-size: 1em;  /* Smallest heading size */
+  }
+
+  .HomeBlogCard-down button {
+    padding: 6px 8px;  /* Small button padding */
+    font-size: 1em;  /* Small font size for mobile */
+  }
+
+  .HomeBlogCard-Content {
+    font-size: 1.2rem;  /* Adjust content font size */
+  }
 }

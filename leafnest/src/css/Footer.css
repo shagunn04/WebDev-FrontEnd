@@ -1,79 +1,148 @@
+/* Footer Basic Styling */
 .Footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-    padding: 20px;
-    background-color: #000000; 
-    color: white;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  padding: 20px;
+  background-color: #000000; 
+  color: white;
+}
+
+/* About Section */
+.About {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 601px;
+  width: 100%; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 224px;
+}
+
+.About h2 {
+  margin: 5px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 10;
+  letter-spacing: 3px;
+  color: #eeeeee; 
+  text-decoration: none;
+  font-size: 2.3rem;
+}
+
+/* Copyright Section */
+.Copyrights {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.Copyrights h1, .About h1 {
+  margin: 5px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 10;
+  letter-spacing: 3px;
+}
+
+.Copyrights a {
+  color: #eeeeee; 
+  text-decoration: none; 
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.Copyrights a:hover {
+  color: rgb(255, 21, 0);
+  transform: scale(1.1);
+}
+
+.Copyrights h1:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+  color: blue;
+}
+
+.Copyrights h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a i {
+  margin-left: 10px; 
+}
+
+.github-icon {
+  margin-right: 10px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 1024px (Tablets) */
+@media (max-width: 1024px) {
   .About {
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;  
-    gap: 601px;
-    width: 100%; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left:224px;
+    gap: 50px; /* Reduce the space between elements */
+    margin-left: 50px; /* Adjust the margin for smaller screens */
   }
 
-  .About h2{
-    margin: 5px 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 10;
-    letter-spacing: 3px;
-    color: #eeeeee; 
-    text-decoration: none;
-    font-size:2.3rem;
+  .About h2 {
+    font-size: 1.8rem; /* Decrease font size for smaller screens */
   }
-  
-  .Copyrights {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
-    margin-top: 20px;
-    gap:20px;
-  }
-  
-  .Copyrights h1, .About h1 {
-    margin: 5px 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 10;
-    letter-spacing: 3px;
-  }
-  
+
   .Copyrights a {
-    color: #eeeeee; 
-    text-decoration: none; 
-    font-size: 2rem;
-    transition: transform 0.3s ease;
-    display: flex;
-    align-items: center;
-  }
-  
-  .Copyrights a:hover {
-    color: rgb(255, 21, 0);
-    transform: scale(1.1);
-  }
-  
-  .Copyrights h1:hover {
-    transform: scale(1.1); 
-    transition: transform 0.3s ease; 
-    color: blue;
+    font-size: 1.8rem; /* Adjust font size for links */
   }
 
-  .Copyrights h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  .Copyrights h1 {
+    font-size: 1.8rem; /* Adjust font size for headings */
   }
-  
-  a i {
-    margin-left: 10px; 
+}
+
+/* For screens smaller than 768px (Mobile) */
+@media (max-width: 768px) {
+  .About {
+    flex-direction: column; /* Stack About section vertically on mobile */
+    gap: 30px; /* Reduce the gap between items */
+    margin-left: 0; /* Reset margin */
+    align-items: center; /* Center-align items */
   }
 
-  .github-icon
-  {
-    margin-right: 10px;
+  .About h2 {
+    font-size: 1.6rem; /* Decrease font size for mobile */
+    text-align: center; /* Center-align text */
   }
-  
+
+  .Copyrights a {
+    font-size: 1.6rem; /* Adjust font size for mobile */
+  }
+
+  .Copyrights h1 {
+    font-size: 1.6rem; /* Adjust font size for mobile */
+  }
+
+  .Footer {
+    padding: 10px; /* Reduce padding on mobile */
+  }
+}
+
+/* For screens smaller than 480px (Very Small Mobile Screens) */
+@media (max-width: 480px) {
+  .About h2 {
+    font-size: 1.4rem; /* Further decrease font size */
+  }
+
+  .Copyrights a {
+    font-size: 1.4rem; /* Adjust font size */
+  }
+
+  .Copyrights h1 {
+    font-size: 1.4rem; /* Adjust font size */
+  }
+
+  .Footer {
+    padding: 5px; /* Minimize padding for very small screens */
+  }
+}

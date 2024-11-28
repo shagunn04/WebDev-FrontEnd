@@ -6,6 +6,7 @@ import HomeGrid from "./HomeGrid";
 import HomeBlog from "./HomeBlog";
 import HomeLetters from "./HomeLetters";
 import HomeSticker from "./HomeSticker";
+import "./css/Home.css"
 function Home() {
   return (
     <div className="HomePage">

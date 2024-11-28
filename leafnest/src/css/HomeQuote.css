@@ -1,36 +1,70 @@
 .HomeQuote {
-    position: relative;
-    width: 95%;
-    height:100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat;
-    padding: 20px 40px;
-    text-align: center;
-    border-radius: 10px;
-    animation: fadein 3s forwards; /* Apply the fade-in effect */
-    flex-direction: column;
-    background-color: transparent; /* Ensure no white background */
+  position: relative;
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+  padding: 20px 40px;
+  text-align: center;
+  border-radius: 10px;
+  animation: fadein 3s forwards; /* Apply the fade-in effect */
+  flex-direction: column;
+  background-color: transparent; /* Ensure no white background */
 }
+
+.HomeQuote h1 {
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: lighter;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
+
+/* Animation for sliding effect */
+@keyframes slideBackground {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+/* Responsive Design: For tablets and below */
+@media (max-width: 1024px) {
+  .HomeQuote {
+    padding: 20px 30px; /* Adjust padding for medium screens */
+  }
+
   .HomeQuote h1 {
-    color: #fff;
-    font-size: 4.5rem;
-    font-weight: lighter;
-    margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: italic;
+    font-size: 3.5rem; /* Reduce font size on tablets */
   }
-  
-  /* Animation for sliding effect */
-  @keyframes slideBackground {
-    from {
-      background-position: 100% 0;
-    }
-    to {
-      background-position: 0 0;
-    }
+}
+
+/* Responsive Design: For mobile devices */
+@media (max-width: 768px) {
+  .HomeQuote {
+    padding: 20px 20px; /* Reduce padding on mobile */
+    height: auto; /* Allow height to adjust based on content */
   }
-  
+
+  .HomeQuote h1 {
+    font-size: 2.5rem; /* Smaller font size for mobile screens */
+  }
+}
+
+/* Responsive Design: For very small mobile devices */
+@media (max-width: 480px) {
+  .HomeQuote {
+    padding: 10px 10px; /* Reduce padding further for very small screens */
+  }
+
+  .HomeQuote h1 {
+    font-size: 1.8rem; /* Further reduce font size */
+  }
+}

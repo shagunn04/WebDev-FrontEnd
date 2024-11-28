@@ -1,7 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Whisper&display=swap');
-
-
 
 .CartCard {
     display: flex;
@@ -20,51 +17,48 @@
 .CartCard:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-  
-  .CartCard-img {
+
+.CartCard-img {
     flex: 1;
     max-width: 350px;
     text-align: center;
-  }
-  
-  .CartCard-img img {
+}
+
+.CartCard-img img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-  }
-  
-  .CartCard-info {
+}
+
+.CartCard-info {
     flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 20px;
-  }
-  
-  .CartCard-info h1 {
+}
+
+.CartCard-info h1 {
     font-size: 3.5rem;
-    font-weight:500;
+    font-weight: 500;
     margin: 5px 0;
-    font-family:  "Montserrat", sans-serif;
-    
-  }
-  
-  .CartCard-info h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.CartCard-info h2 {
     font-size: 2.5rem;
     color: #1b6011;
     margin: 5px 0;
-    
-  }
-  
-  .CartCard-qty {
+}
+
+.CartCard-qty {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-  }
-  
-  .CartCard-qty button {
+}
+
+.CartCard-qty button {
     padding: 8px 15px;
     font-size: 1.9rem;
     border: none;
@@ -73,26 +67,26 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
-  }
-  
-  .CartCard-qty button:hover {
+}
+
+.CartCard-qty button:hover {
     background-color: #ea0707;
-  }
-  
-  .CartCard-qty h1 {
+}
+
+.CartCard-qty h1 {
     margin: 0 20px;
     font-size: 2.5rem;
-  }
-  
-  .CartCard-action {
+}
+
+.CartCard-action {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-  }
-  
-  .CartCard-action button {
+}
+
+.CartCard-action button {
     margin: 5px 0;
     padding: 8px 16px;
     font-size: 1.4rem;
@@ -102,17 +96,114 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
-  }
-  
-  .CartCard-action button:hover {
+}
+
+.CartCard-action button:hover {
     background-color: #0056b3;
-  }
-  
-  .CartCard-action button:nth-child(1) {
+}
+
+.CartCard-action button:nth-child(1) {
     background-color: #dc3545;
-  }
-  
-  .CartCard-action button:nth-child(1):hover {
+}
+
+.CartCard-action button:nth-child(1):hover {
     background-color: #0808ee;
-  }
-  
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .CartCard {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .CartCard-img {
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .CartCard-info h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .CartCard-info h2 {
+        font-size: 2rem;
+    }
+
+    .CartCard-qty button {
+        font-size: 1.6rem;
+    }
+
+    .CartCard-action button {
+        font-size: 1.2rem;
+    }
+
+    .CartCard-qty h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .CartCard {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .CartCard-img {
+        max-width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .CartCard-info h1 {
+        font-size: 2rem; /* Further adjust font size */
+    }
+
+    .CartCard-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .CartCard-qty button {
+        font-size: 1.4rem;
+    }
+
+    .CartCard-action button {
+        font-size: 1rem;
+    }
+
+    .CartCard-qty h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .CartCard {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .CartCard-img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .CartCard-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .CartCard-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .CartCard-qty button {
+        font-size: 1.2rem;
+    }
+
+    .CartCard-action button {
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+
+    .CartCard-qty h1 {
+        font-size: 1.5rem;
+    }
+}

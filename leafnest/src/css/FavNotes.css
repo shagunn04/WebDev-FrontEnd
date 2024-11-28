@@ -1,28 +1,71 @@
 .FavNotesSection {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(533px, 1fr));
-    gap: 20px; /* Adjust spacing between cards */
-    
-    margin-top: 20px;
-  }
-  .noNotes {
-    display: flex;          
-    flex-direction: column;   
-    justify-content: center;  
-    align-items: center;      
-   
-    text-align: center;   
-    margin-top: 50px;          
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(533px, 1fr));
+  gap: 20px; /* Adjust spacing between cards */
+  margin-top: 20px;
+}
+
+/* Styling for when no notes are available */
+.noNotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .notesGif {
-    width: 700px;      
-    margin-top: 20px;       
+  width: 700px;
+  margin-top: 20px;
 }
 
-.noNotes h1{
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   font-weight: 100;
-
+.noNotes h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
 }
 
+/* Responsive Design for smaller screens */
+@media (max-width: 1024px) {
+  .FavNotesSection {
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjust columns for smaller screens */
+      gap: 16px; /* Smaller gap */
+  }
+
+  .notesGif {
+      width: 100%; /* Make gif responsive */
+      max-width: 600px; /* Limit gif max-width */
+  }
+}
+
+@media (max-width: 768px) {
+  .FavNotesSection {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Further reduce column size */
+      gap: 12px; /* Reduce gap between cards */
+  }
+
+  .notesGif {
+      width: 100%;
+      max-width: 500px; /* Adjust gif width for smaller screens */
+  }
+
+  .noNotes h1 {
+      font-size: 1.5rem; /* Smaller text size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .FavNotesSection {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Single column on small screens */
+      gap: 8px; /* Minimal gap */
+  }
+
+  .notesGif {
+      width: 100%;
+      max-width: 400px; /* Further reduce gif size */
+  }
+
+  .noNotes h1 {
+      font-size: 1.2rem; /* Further reduce text size for very small screens */
+  }
+}
