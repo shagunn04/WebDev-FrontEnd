@@ -65,9 +65,10 @@
 .watering-button,
 .maintenance-button {
   padding: 10px 20px;
-  border-radius: 40px;
+  font-size:1.5rem;
   cursor: pointer;
-  font-size: 1.5rem;
+  border:none;
+  border-radius:20px;
 }
 
 .sunlight-button {
@@ -144,16 +145,20 @@
   background-color: red;
   color: white;
   padding: 10px 20px;
-  border-radius: 5px;
+  font-size:2rem;
   cursor: pointer;
+  border:none;
+  border-radius:20px;
 }
 
 .favourite-button {
   background-color: rgb(208, 88, 108);
   color: white;
   padding: 10px 20px;
-  border-radius: 5px;
+  font-size:2rem;
   cursor: pointer;
+  border:none;
+  border-radius:20px;
 }
 
 .favourite-button:hover {
