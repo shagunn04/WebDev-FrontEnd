@@ -8,16 +8,16 @@ function Footer() {
             <h3 className="footer-text">
                 <span className="copyright-icon">
                     <FaCopyright />
-                </span>
+                </span> 
                 2024 #VANLIFE Copyrights reserved
             </h3>
             
        
-            <h2 className="developer-name">Developed by Sarim Malik</h2>
+            <h2 className="developer-name">Developed by Shagun</h2>
             
          
             <a 
-                href="https://github.com/SarimMalik01/WebDevelopment-Projects/tree/main/vanlife"
+                href="https://github.com/shagunn04"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="github-link"

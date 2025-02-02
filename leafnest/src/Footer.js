@@ -14,8 +14,8 @@ function Footer() {
       </div>
       <div className="Copyrights">
         <h2>© 2025 LeafNest Copyrights Reserved</h2>
-        <h1>Developed By Sarim Malik</h1>
-        <a href="https://github.com/SarimMalik01" target="_blank" rel="noopener noreferrer">
+        <h1>Developed By Shagun</h1>
+        <a href="https://github.com/shagunn04" target="_blank" rel="noopener noreferrer">
         <FaGithub className="github-icon"/> Visit Project 
         </a>
       </div>
