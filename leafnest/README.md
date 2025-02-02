@@ -104,4 +104,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Now your README includes the link to the live deployment on Netlify.
+
