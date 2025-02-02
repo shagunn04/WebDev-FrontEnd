@@ -15,9 +15,6 @@ LeafNest is a plant-selling website that offers a wide variety of plants, garden
 - **Responsive Design**: The website adapts to all screen sizes, making it mobile-friendly.
 - **Interactive UI**: Features like animations (growing plants) and smooth hover effects enhance the user experience.
 
-## Deployment Link
-
-You can view the live website here: [LeafNest on Netlify](https://6748564eb958148e7db27f62--vocal-bombolone-565670.netlify.app/)
 
 ## Project Setup
 
