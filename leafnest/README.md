@@ -2,12 +2,6 @@
 # LeafNest
 ![Screenshot 2025-02-05 091036](https://github.com/user-attachments/assets/53281741-d4f8-4131-88ae-fdd264ab92b9)
 ![Screenshot 2025-02-05 091052](https://github.com/user-attachments/assets/22551a0a-2809-4331-8ec1-fff36d4fba72)
-![Screenshot 2025-02-05 091109](https://github.com/user-attachments/assets/7b570f4b-b069-47ec-87f2-cc208df4f1a0)LeafNest is a plant-selling website that offers a wide variety of plants, gardening tools, and tips for plant care. It is designed to make buying plants and maintaining them easy for plant enthusiasts and beginners alike. The platform allows users to browse through a wide range of plants, view detailed descriptions, and get personalized care tips for each plant.
-
-## Features
-## Features
-## Benefits of Buying from Us
-
 <table>
   <tr>
     <td>
@@ -22,11 +16,12 @@
   </tr>
 </table>
 
-This gives users a convenient experience allowing them selecting multiple filters at same time..
 
 
+## Features
+## Benefits of Buying from US
 - **Quick View**:
--![Screenshot 2025-02-05 091208](https://github.com/user-attachments/assets/3bace204-7626-48b2-bca9-a3cb24caf359)
+-![Screenshot 2025-02-05 091208](https://github.com/user-attachments/assets/3bace204-7626-48b2-bca9-a3cb24caf359)This gives users a convenient experience allowing them selecting multiple filters at same time..
 -  Allows users to see quick details about the plant without leaving the main page.
 - **Plant Care Tips**:
 -
