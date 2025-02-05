@@ -79,7 +79,7 @@
 <table>
   <tr>
     <td>
-      <img src=" https://github.com/user-attachments/assets/839d9295-39ae-4799-9fb5-f48ebceb10c4"/>
+      <img src="https://github.com/user-attachments/assets/839d9295-39ae-4799-9fb5-f48ebceb10c4"/>
     </td>
     <td>
     The Cart section allows user to:
