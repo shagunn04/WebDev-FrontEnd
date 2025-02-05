@@ -5,8 +5,7 @@
 <table>
   <tr>
     <td>
-      <img src="![Screenshot 2025-02-05 105828](https://github.com/user-attachments/assets/db1a7d4d-421d-487c-86f9-26bc84d4f651)
-" width="400"/>
+      <img src="![Screenshot 2025-02-05 105828](https://github.com/user-attachments/assets/db1a7d4d-421d-487c-86f9-26bc84d4f651)" width="400"/>
     </td>
     <td>
       LeafNest is a plant-selling website that offers a wide variety of plants, gardening tools, and tips for plant care. 
