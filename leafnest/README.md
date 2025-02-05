@@ -1,11 +1,12 @@
-
+![Screenshot 2025-02-05 091109](https://github.com/user-attachments/assets/cb1737ee-16cd-46a6-8669-4a54479829c3)
 # LeafNest
 ![Screenshot 2025-02-05 091036](https://github.com/user-attachments/assets/53281741-d4f8-4131-88ae-fdd264ab92b9)
 ![Screenshot 2025-02-05 091052](https://github.com/user-attachments/assets/22551a0a-2809-4331-8ec1-fff36d4fba72)
 <table>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/db1a7d4d-421d-487c-86f9-26bc84d4f651" width="400"/>
+      <img src="https://github.com/user-attachments/assets/4c1cf496-b8c5-47fa-aa4c-c21bf1541d67
+" width="400"/>
     </td>
     <td>
       LeafNest is a plant-selling website that offers a wide variety of plants, gardening tools, and tips for plant care. 
