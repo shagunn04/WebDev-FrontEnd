@@ -117,10 +117,15 @@
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/d5017973-8c2b-4af7-bd2f-0416fb3eed06" width="400" />
+      <img src="https://github.com/user-attachments/assets/d5017973-8c2b-4af7-bd2f-0416fb3eed06"  />
     </td>
     <td>
-      <img src="https://github.com/user-attachments/assets/4fa3a03a-d029-4da5-8208-6142236058dc" width="400"/>
+      <img src="https://github.com/user-attachments/assets/4fa3a03a-d029-4da5-8208-6142236058dc" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/7ca99043-1400-4ef6-96c1-e8676fead64f"/>
     </td>
   </tr>
   <tr>
