@@ -1,5 +1,9 @@
 
 # LeafNest
+![Uploading Screenshot 2025-02-05 091036.png…]()
+![Uploading Screenshot 2025-02-05 091052.png…]()
+![Screenshot 2025-02-05 091109](https://github.com/user-attachments/assets/7b570f4b-b069-47ec-87f2-cc208df4f1a0)
+
 
 LeafNest is a plant-selling website that offers a wide variety of plants, gardening tools, and tips for plant care. It is designed to make buying plants and maintaining them easy for plant enthusiasts and beginners alike. The platform allows users to browse through a wide range of plants, view detailed descriptions, and get personalized care tips for each plant.
 
