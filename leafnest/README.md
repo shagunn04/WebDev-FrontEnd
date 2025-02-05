@@ -23,7 +23,7 @@
 <table>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/d08fd264-ddaf-4e9a-96e9-73ef9d3a5a04" height="100" width="400"/>
+      <img src="https://github.com/user-attachments/assets/d08fd264-ddaf-4e9a-96e9-73ef9d3a5a04" />
     </td>
     <td>
       Our website offers a convenient experience to customers by allowing them filter the plants on various categories as <br >
