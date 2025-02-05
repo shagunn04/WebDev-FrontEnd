@@ -6,14 +6,21 @@
 
 ## Features
 ## Features
-- **Plant Categories**: [Screenshot](https://github.com/user-attachments/assets/f33fd016-af29-4d9d-9068-21de1a88f787)  
-  Users can filter plants on various parameters like:
-- Price Range
-- Amount of Sunlight Needed
-- Watering Needs
-- Size of Plant
-- Maintenance (Low, Medium, High)
-- Type: **Flowering** or **Non-flowering**
+## Benefits of Buying from Us
+
+<table>
+  <tr>
+    <td>
+      <img src="![Screenshot 2025-02-05 105828](https://github.com/user-attachments/assets/db1a7d4d-421d-487c-86f9-26bc84d4f651)
+" width="400"/>
+    </td>
+    <td>
+      LeafNest is a plant-selling website that offers a wide variety of plants, gardening tools, and tips for plant care. 
+      It is designed to make buying plants and maintaining them easy for plant enthusiasts and beginners alike. 
+      The platform allows users to browse through a wide range of plants, view detailed descriptions, and get personalized care tips for each plant.
+    </td>
+  </tr>
+</table>
 
 This gives users a convenient experience allowing them selecting multiple filters at same time..
 
