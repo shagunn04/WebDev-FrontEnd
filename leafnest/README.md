@@ -19,6 +19,25 @@
 
 ## Features
 ## Benefits of Buying from US
+- **Plant Categories**:
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/d08fd264-ddaf-4e9a-96e9-73ef9d3a5a04" width="400"/>
+    </td>
+    <td>
+      Our website offers a convenient experience to customers by allowing them filter the plants on various categories as <br >
+      <ul>
+        <li>Price</li>
+        <li>Amount of Sunlight Required</li>
+        <li>Watering Needs</li>
+        <li>Size of plant</li>
+        <li>Maintenance(low,medium,high)</li>
+        <li>Type of plant as flowering or non floweing</li>
+    </td>
+  </tr>
+</table>
+
 - **Quick View**:
 -![Screenshot 2025-02-05 091208](https://github.com/user-attachments/assets/3bace204-7626-48b2-bca9-a3cb24caf359)This gives users a convenient experience allowing them selecting multiple filters at same time..
 -  Allows users to see quick details about the plant without leaving the main page.
