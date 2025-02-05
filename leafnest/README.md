@@ -105,9 +105,46 @@
   </tr>
 </table>
        
-- **reCAPTCHA Integration**: Prevents spam and bots by requiring users to complete a Google reCAPTCHA before submitting forms (e.g., "Write an Appreciation Letter" submission).
-- **Account Management**: Users can manage their account and orders.
-- **Responsive Design**: The website adapts to all screen sizes, making it mobile-friendly.
+- **reCAPTCHA Integration**:
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/53633bf6-d2e2-47c8-af55-b3d5e77c1f53"/>
+    </td>
+    <td>
+     Prevents spam and bots by requiring users to complete a Google reCAPTCHA before submitting forms (e.g., "Write an Appreciation Letter" submission)
+    </td>
+  </tr>
+</table>
+
+- **Account Management**:
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/a775b05a-b7b3-4489-bd47-4c51d395acc8"/>
+    </td>
+    <td>
+    Users can manage their account and orders.
+    </td>
+  </tr>
+</table> 
+
+- **Favorites**
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/b5c59454-446d-4a99-a5a8-fa2b6910aa90"/>
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/180a946d-6dcb-4b35-a6dc-bfe951c3843f"/>
+    <p>The favorites section under Accounts helps user to store all wishlishted plants there along with adding notes</p>
+    </td>
+  </tr>
+</table> 
+
+- **Responsive Design**:
+  The website adapts to all screen sizes, making it mobile-friendly.
+  
 - **Interactive UI**: Features like animations (growing plants) and smooth hover effects enhance the user experience.
 
 
