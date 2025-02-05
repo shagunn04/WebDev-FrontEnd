@@ -39,8 +39,18 @@
 </table>
 
 - **Quick View**:
--![Screenshot 2025-02-05 091208](https://github.com/user-attachments/assets/3bace204-7626-48b2-bca9-a3cb24caf359)This gives users a convenient experience allowing them selecting multiple filters at same time..
--  Allows users to see quick details about the plant without leaving the main page.
+- <table>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/3bace204-7626-48b2-bca9-a3cb24caf359" />
+    </td>
+    <td>
+      This Allows users to see quick details about the plant without leaving the main page. <br >
+      
+    </td>
+  </tr>
+</table>
+ 
 - **Plant Care Tips**:
 -
 -   Provides detailed tips for each plant to help users maintain a healthy garden.
