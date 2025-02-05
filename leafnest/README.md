@@ -137,7 +137,9 @@
     </td>
     <td>
       <img src="https://github.com/user-attachments/assets/180a946d-6dcb-4b35-a6dc-bfe951c3843f"/>
-    <p>The favorites section under Accounts helps user to store all wishlishted plants there along with adding notes</p>
+    </td>
+    <td>
+      The favorites section under Accounts helps user to store all wishlishted plants there along with adding notes
     </td>
   </tr>
 </table> 
