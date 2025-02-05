@@ -78,8 +78,4 @@ License
 This project is licensed under the MIT License.
 
 
-# *Deploy Link*
-Make sure to run db.json on a json server so that the fetch request from http://localhost:3000/ is successful using command
-json-server --watch db.json
 
-https://sprightly-beignet-5f63c9.netlify.app/Vans
