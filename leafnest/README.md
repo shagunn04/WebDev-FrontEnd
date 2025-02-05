@@ -73,7 +73,8 @@
     </td>
   </tr>
 </table>
-        
+
+
 - **Cart**:
 <table>
   <tr>
