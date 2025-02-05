@@ -1,4 +1,6 @@
 # **Van Rental App**
+![Screenshot 2025-02-05 203427](https://github.com/user-attachments/assets/52672927-02fa-416d-9f7d-f5abdccf544b)
+
 A React-based application designed for users to explore, rent, and manage vans. It includes a user dashboard, account balance, charts for income analysis, a review system, and the ability to save favorite vans for future rentals.
 
 ## **Features**
