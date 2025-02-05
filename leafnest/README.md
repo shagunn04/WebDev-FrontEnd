@@ -109,23 +109,28 @@
 <table>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/149fff7a-00e8-4e85-8a43-1d8badd1a857" width="250px" height="auto"/>
+      <img src="https://github.com/user-attachments/assets/149fff7a-00e8-4e85-8a43-1d8badd1a857" width="200px"/>
     </td>
     <td>
-      <img src="https://github.com/user-attachments/assets/dc05502d-95cb-4a74-afec-9d27601878b1" width="250px" height="auto"/>
+      <img src="https://github.com/user-attachments/assets/dc05502d-95cb-4a74-afec-9d27601878b1" width="200px"/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/d5017973-8c2b-4af7-bd2f-0416fb3eed06" width="200px"/>
     </td>
     <td>
-      <img src="https://github.com/user-attachments/assets/d5017973-8c2b-4af7-bd2f-0416fb3eed06" width="250px" height="auto"/>
+      <img src="https://github.com/user-attachments/assets/4fa3a03a-d029-4da5-8208-6142236058dc" width="200px"/>
     </td>
-    <td>
-     <img src="https://github.com/user-attachments/assets/4fa3a03a-d029-4da5-8208-6142236058dc" width="250px" height="auto"/>
-    </td>
-    <td>
-      The Blog Section Under Accounts engages user to write a blog on various topics,enabling them to see their older blogs filtered by time !! and keeping tjhem on home page of our website along with no. of 
-      people viewed their blog...
+  </tr>
+  <tr>
+    <td colspan="4" style="text-align: center; font-size: 18px; padding-top: 10px;">
+      The Blog Section Under Accounts engages users to write a blog on various topics, enabling them to see their older blogs filtered by time!! 
+      and keeping them on the home page of our website along with the number of people who viewed their blog...
     </td>
   </tr>
 </table>
+
        
 - **reCAPTCHA Integration**:
 <table>
