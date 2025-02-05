@@ -1,17 +1,22 @@
 
 # LeafNest
-![ Screenshot 2025-02-05 091036.png…](https://github.com/user-attachments/assets/7b570f4b-b069-47ec-87f2-cc208df4f1a0)
-![Uploading Screenshot 2025-02-05 091052.png…]()
+![Screenshot 2025-02-05 091036](https://github.com/user-attachments/assets/53281741-d4f8-4131-88ae-fdd264ab92b9)
+![Screenshot 2025-02-05 091052](https://github.com/user-attachments/assets/22551a0a-2809-4331-8ec1-fff36d4fba72)
 ![Screenshot 2025-02-05 091109](https://github.com/user-attachments/assets/7b570f4b-b069-47ec-87f2-cc208df4f1a0)
 
 
 LeafNest is a plant-selling website that offers a wide variety of plants, gardening tools, and tips for plant care. It is designed to make buying plants and maintaining them easy for plant enthusiasts and beginners alike. The platform allows users to browse through a wide range of plants, view detailed descriptions, and get personalized care tips for each plant.
 
 ## Features
-
-- **Plant Categories**: Users can filter plants by type (e.g., Indoor, Outdoor, Succulents, Air Purifying).
-- **Quick View**: Allows users to see quick details about the plant without leaving the main page.
-- **Plant Care Tips**: Provides detailed tips for each plant to help users maintain a healthy garden.
+- **Plant Categories**:
+![Screenshot 2025-02-05 091147](https://github.com/user-attachments/assets/f1c51aac-a6ef-4bc8-b47f-2f60bb624858)
+-  Users can filter plants by type (e.g., Indoor, Outdoor, Succulents, Air Purifying).
+- **Quick View**:
+-![Screenshot 2025-02-05 091208](https://github.com/user-attachments/assets/3bace204-7626-48b2-bca9-a3cb24caf359)
+-  Allows users to see quick details about the plant without leaving the main page.
+- **Plant Care Tips**:
+-
+-   Provides detailed tips for each plant to help users maintain a healthy garden.
 - **Customer Reviews**: User reviews and ratings for each plant available on the site.
 - **Download Invoice**: After making a purchase, users can download a detailed invoice for their transaction.
 - **reCAPTCHA Integration**: Prevents spam and bots by requiring users to complete a Google reCAPTCHA before submitting forms (e.g., "Write an Appreciation Letter" submission).
