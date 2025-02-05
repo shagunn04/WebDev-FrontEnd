@@ -39,7 +39,7 @@
 </table>
 
 - **Quick View**:
-- <table>
+<table>
   <tr>
     <td>
       <img src="https://github.com/user-attachments/assets/3bace204-7626-48b2-bca9-a3cb24caf359" />
@@ -52,7 +52,7 @@
 </table>
  
 - **Plant Care Tips**:
--<table>
+<table>
   <tr>
     <td>
       <img src="https://github.com/user-attachments/assets/bccb361b-9309-4f61-bd80-ad3f3b6c7915" />
@@ -62,12 +62,14 @@
     </td>
   </tr>
 </table> 
+
 - **Related Products**:
--<table>
+- <table>
   <tr>
     <td>
       <img src='https://github.com/user-attachments/assets/33eef7cc-a17e-4749-a4d5-8930a4dea464"/>
     </td>
+        
     <td>
       While viewing a plant,this feature allows user to have a look of other plants too  which are related to given plant.
     </td>
@@ -75,11 +77,10 @@
 </table>
         
 - **Cart**:
-  -<table>
+<table>
   <tr>
     <td>
-      <img src=" https://github.com/user-attachments/assets/839d9295-39ae-4799-9fb5-f48ebceb10c4
-  "/>
+      <img src=" https://github.com/user-attachments/assets/839d9295-39ae-4799-9fb5-f48ebceb10c4"/>
     </td>
     <td>
     The Cart section allows user to:<br>
@@ -88,11 +89,13 @@
         <li>Remove plant from cart</li>
         <li>adding plant back to favourites when user isn't sure of buying</li>
         <li>Gives a view of recently viewed products too along with option of invoice</li>
+      </ul>
     </td>
   </tr>
-</table>   
+</table>  
+
 - **Download Invoice**:
-  -<table>
+<table>
   <tr>
     <td>
       <img src="https://github.com/user-attachments/assets/74069f15-1840-425b-9a0c-621fa63bb79f"/>
